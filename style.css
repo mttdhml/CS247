@@ -12,5 +12,24 @@ h1 {
 
 img{
 	padding-top: 10px;
-	
+
+}
+
+.find-date-image{
+	float: left;
+	padding-right: 10px;
+}
+
+hr{
+	color: black;
+	height: 4px;
+
+}
+
+.user-preview-profile{
+    width:125px;
+    height:125px;
+    padding:5px;
+    float:left;
+
 }
