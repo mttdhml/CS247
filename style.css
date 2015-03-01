@@ -4,12 +4,14 @@ body {
 
 h1 {
   font-family: "HelveticaNeue-UltraLight"; 
+  text-align: center;
   font-size: 40pt;
 }
 
 h3 {
-	font-family: "HelveticaNeue-Light"; 
-	font-size: 23pt; 
+	font-family: "HelveticaNeue"; 
+	font-size: 14pt; 
+	text-align: center;
 }
 
 small {
@@ -76,8 +78,8 @@ small {
 }
 
 .location-icon {
-	width: 16.1px;
-    height: 16.1px;
+	width: 20px;
+    height: 32px;
 }
 
 .secondary-text {
@@ -116,12 +118,20 @@ small {
 
 #matt {
 	background-image: url("matt.png");
-	padding-left: 40px;
+}
+
+#mattd {
+	background-image: url("images/matt.jpg"); 
+	background-size: 378px 378px;
+}
+
+#jed {
+	background-image: url("images/jed.jpg"); 
+	background-size: 378px 378px;
 }
 
 img{
 	padding-top: 10px;
-
 }
 
 .find-date-image{
@@ -132,7 +142,6 @@ img{
 hr{
 	color: black;
 	height: 4px;
-
 }
 
 .user-preview-profile{
