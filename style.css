@@ -41,3 +41,13 @@ hr{
     float:left;
 
 }
+
+.receiver{
+	text-align:right;
+	background-color:white;
+}
+
+.sender{
+	background-color:#6495ED;
+}
+
