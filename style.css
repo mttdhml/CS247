@@ -1,4 +1,5 @@
 body {
+	padding-top: 50px; 
      /* background-color: #dedede; /* #efefef	; */ 
 }
 
@@ -17,6 +18,10 @@ h3 {
 small {
 	font-family: "HelveticaNeue-Light"; 
 	font-size: 8pt; 
+}
+
+.event-photo {
+	width: 320px;
 }
 
 .active {
@@ -157,15 +162,4 @@ hr{
     height:150px;
     padding:5px;
     float:left;
-
 }
-
-.receiver{
-	text-align:right;
-	background-color:white;
-}
-
-.sender{
-	background-color:#6495ED;
-}
-
