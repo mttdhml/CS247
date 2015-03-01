@@ -9,6 +9,11 @@ h1 {
   font-size: 40pt;
 }
 
+h2 {
+  font-family: "HelveticaNeue-UltraLight"; 
+  font-size: 24pt;
+}
+
 h3 {
 	font-family: "HelveticaNeue"; 
 	font-size: 14pt; 
@@ -139,14 +144,22 @@ img{
 	padding-top: 10px;
 }
 
+.row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	
+
 .find-date-image{
+	padding-left: 5px;
 	float: left;
 	padding-right: 10px;
+
 }
 
 hr{
 	color: black;
-	height: 4px;
+	border-top: 2px solid #000;
 }
 
 .user-preview-profile{
@@ -162,4 +175,11 @@ hr{
     height:150px;
     padding:5px;
     float:left;
+}
+
+.event-button{
+	width: 125px;
+	border: 2px solid;
+	border-radius: 0px;
+	color: #b73e74;
 }
