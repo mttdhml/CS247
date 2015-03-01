@@ -157,4 +157,15 @@ hr{
     height:150px;
     padding:5px;
     float:left;
+
 }
+
+.receiver{
+	text-align:right;
+	background-color:white;
+}
+
+.sender{
+	background-color:#6495ED;
+}
+

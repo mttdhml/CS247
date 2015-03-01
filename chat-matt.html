@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>The Weeknd</title>
+<title>People Going to The Weeknd</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -26,6 +26,9 @@
 
   			<div class="collapse navbar-collapse navbar-ex1-collapse">
   						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
+                <li>
+                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                </li>
   							<li>
   								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
   							</li>
@@ -40,24 +43,43 @@
   		</div>
   	</nav>
 
-<div class="container text-center">
-<img class="event-photo" src="images/theweeknd.jpg">
-<h1>The Weeknd</h1>
-<h3>Bill Graham Civic Auditorium<br/>
-	March 7, 2014 9:00PM<br/>&nbsp;</h3>
+<div class="container">
 
-<div class="col-sm-4 text-center"> 
-<a href="#" role="button" id="go-button" class="btn btn-success btn-large">I Want to Go!</a></div>
-<br/>
-<div class="col-sm-4 text-center"> 
-<a href="find_date.html" role="button" class="btn btn-success btn-large">Find Date</a>
+<div class="row">
+ <img class="user-profile-pic img-circle" src="images/matt.jpg"> 
+    <h2>Matt, 23</h2>
+    <h4>Event: The Weeknd, March 7, 2015</h4>
 </div>
+<div id="chatbox">
+<div class="row" >
+<p class="sender"> Hey, nice to meet you! I see you wanted to go to watch Toby Keith! </p>
+</div>
+<div class="row">
+<p class="receiver"> Are you interested in going? I'm planning to buy tickets soon! Wanna do it through this app? </p>
+</div>
+<div class="row">
+<p class="sender"> Sure! Which special are you interested in? </p>
+</div>
+</div>
+<textarea id="message-box" rows="4" cols="50">
+Respond Here
+</textarea>
+<div class="col-sm-4 text-center"> 
+<button id="message-send">Send Message</a>
+</div>
+
+</div>
+
+
+ 
+
+
 
 </div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/event_page.js"></script>
+<script src="js/chat.js"></script>
 </BODY>
 </HTML>
 
