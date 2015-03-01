@@ -33,3 +33,11 @@ hr{
     float:left;
 
 }
+
+.user-profile-pic{
+    width:150px;
+    height:150px;
+    padding:5px;
+    float:left;
+
+}
