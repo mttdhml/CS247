@@ -1,12 +1,121 @@
 body {
-    background-color: #efefef	; 
+     /* background-color: #dedede; /* #efefef	; */ 
 }
 
 h1 {
-  font-family: "Arial"; 
+  font-family: "HelveticaNeue-UltraLight"; 
+  font-size: 40pt;
+}
+
+h3 {
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 23pt; 
+}
+
+small {
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 8pt; 
+}
+
+.active {
+	background-color: transparent;
+}
+
+.person {
+	margin: 10px;
+	height: 270px; 
+	background-color: white; 
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid black;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header {
+	position: fixed;
+	background-color: white; 
+	opacity: .95; 
+	width: 102%; 
+	margin-left: -2px; 
+	padding-bottom: 10px;
+	border: 1px solid #545454; 
+	z-index: 2;
+}
+
+.light {
+	font-color: #ccc;
+}
+
+.header-margin {
+	height: 140px; 
+	width: 100px; 
+	background-color: transparent;
+}
+
+.header-margin-search {
+	height: 170px; 
+	width: 100px; 
+	background-color: transparent;
 }
 
 .event {
+	margin: 10px; 
+	height: 179.4px;
+	padding-top: 26.1px; 
+	padding-left: 42.4px; 
+	border-width: 1px; 
+	border-color: black; 
+	background-color: #fff;
+	background-color: white; 
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid black; 
+}
+
+.subtext {
+	margin-top: 16.1px;
+}
+
+.location-icon {
+	width: 16.1px;
+    height: 16.1px;
+}
+
+.secondary-text {
+	padding-top: 40px; 
+}
+
+.person-data {
+	position: absolute;
+	z-index: 0;
+	width: 378px; 
+	height: 78px; 
+	margin-top: 190px;
+	background-color: white; 
+	opacity: .95; 
+}
+.name {
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 23pt; 
+	margin-left: 20px;
+}
+#custom-input {
+	width: 100%; 
+}
+#john {
+	background-image: url("john.png");
+}
+#paul {
+	background-image: url("paul.png");
+}
+#mayer {
+	background-image: url("mayer.png");
+}
+#weeknd {
+	background-image: url("weeknd.png");
+}
+
+#matt {
+	background-image: url("matt.png");
 	padding-left: 40px;
 }
 
