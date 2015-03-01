@@ -59,6 +59,7 @@ small {
 }
 
 .event {
+<<<<<<< HEAD
 	margin: 10px; 
 	height: 179.4px;
 	padding-top: 26.1px; 
@@ -116,4 +117,36 @@ small {
 
 #matt {
 	background-image: url("matt.png");
+	padding-left: 40px;
+}
+
+img{
+	padding-top: 10px;
+
+}
+
+.find-date-image{
+	float: left;
+	padding-right: 10px;
+}
+
+hr{
+	color: black;
+	height: 4px;
+
+}
+
+.user-preview-profile{
+    width:125px;
+    height:125px;
+    padding:5px;
+    float:left;
+
+}
+
+.user-profile-pic{
+    width:150px;
+    height:150px;
+    padding:5px;
+    float:left;
 }
