@@ -27,43 +27,43 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav navbar-right"  id="dropdown" >
+                <ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 <li>
                   <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
                 </li>
-                            <li>
-                                <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
-                            </li>
-                            <li>
-                                <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
-                            </li>
-                            <li>
-                                <a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
-                            </li>
-                        </ul>
-            </div><!-- /.navbar-collapse -->
+                <li>
+                    <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp;My Profile</a>
+                </li>
+                <li>
+                    <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                </li>
+                <li>
+                    <a href="logout.html" target="_blank">
+                    <i class="fa fa-power-off"></i>&nbsp; Logout</a>
+                </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="header">  
-        <ul class="nav nav-tabs">
-            <li role="presentation"><a href="find-event.html">Events</a></li>
-            <li role="presentation" class="active"><a href="#">People</a></li>
-        </ul>
-        <h1 class="text-center"> People Near You </h1>
+        <div class="tab-indicator-b"></div>
+        <a href="find-event.html">
+            <div class="events-tab">Events</div>
+        </a>
+        <div class="people-tab" id="active">People</div>
     </div>
     <div class="header-margin"></div>
+
     <a href="profile-jed.html">
         <div class="person" id="jed"> 
-            <div class="person-data">
-                <div class="name"> Jed </div>
-            </div>  
+            <div class="person-footing"></div> 
+            <div class="person-name">Jed Tan</div>
         </div>
     </a>
     <a href="profile-matt.html">
         <div class="person" id="mattd"> 
-            <div class="person-data">
-                <div class="name"> Matt </div>
-            </div>  
+            <div class="person-footing"></div> 
+            <div class="person-name">Matt Duhamel</div>
         </div>
     </a>
     <div class="person" id="john"> 
@@ -91,15 +91,5 @@
              <div class="name"> Matt </div>
         </div>
     </div>
-    <script>
-        var a = document.getElementById('jed'); 
-        var b = document.getElementById('mattd'); 
-        a.addEventListener("click", function() { 
-            console.log("hello jed"); 
-        });
-        b.addEventListener("click", function() { 
-            console.log("hello matt"); 
-        }); 
-    </script>
     </body>
 </html>

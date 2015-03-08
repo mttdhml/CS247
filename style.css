@@ -1,6 +1,11 @@
 body {
 	padding-top: 50px; 
+	background-color: #f2f1f1;
      /* background-color: #dedede; /* #efefef	; */ 
+}
+
+a {
+	color: #525252;
 }
 
 h1 {
@@ -8,17 +13,51 @@ h1 {
   font-size: 20pt;
   margin-left: 20px; 
   margin-top: 30px;
-
 }
 
 h2 {
   font-family: "HelveticaNeue-UltraLight"; 
   font-size: 24pt;
+  color: white;
+  text-align: center;
 }
 
 h3 {
 	font-family: "HelveticaNeue"; 
 	font-size: 14pt;
+	color: #fbfcfc;
+}
+
+.person-location {
+	font-family: "HelveticaNeue-Light";
+	font-size: 14pt;
+	color: white;
+	text-align: center;
+}
+
+.header {
+	position: fixed;
+	background-color: white; 
+	opacity: .95; 
+	width: 102%; 
+	height: 94px;
+	margin-left: -2px; 
+	padding-bottom: 10px;
+	background-color: #f2f1f1;
+	box-shadow: 4px 0px 10px 2px #adadad;  
+	z-index: 2;
+	padding-top: 50px;
+}
+
+.search-input {
+	display: block;
+	margin: 0;
+	width: 100%;
+	font-family: "HelveticaNeue-Thin";
+	font-size: 14pt;
+	box-shadow: none;
+	border-radius: none;
+	height: 100%;
 }
 
 small {
@@ -26,16 +65,170 @@ small {
 	font-size: 8pt; 
 }
 
+.search {
+	position: absolute;
+	width: 300px; 
+	height: 40px;
+	margin-top: -4px; 
+	margin-left: 20px;
+	background-color:black;
+}
+
+.person-name {
+	position: absolute;
+	margin-top: 225px; 
+	padding-left: 20px;
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 20pt;
+	color: #fbfcfc;
+}
+
+.person-data-container {
+	position: absolute;
+	width: 200px; 
+	height: 200px; 
+	margin-left: 30px; 
+	margin-top: 30px;
+}
+
+.find-date-title-frame {
+	position: absolute;
+	width: 240px; 
+	height: 50px; 
+	background-color: #555557; 
+	margin-top: 20px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
+.find-date-event-title {
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 20pt;
+	position: absolute;
+	margin-left: 20px;
+}
+
+.find-date-event-location {
+	font-family: "HelveticaNeue-Bold"; 
+	font-style: 12pt; 
+	color: #ccc0ba;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+.people-attending {
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 16pt; 
+	padding-left: 8px;
+	background-color: #fbfcfc;
+	position: absolute;
+	margin-top: 180px;
+	width: 100%;
+}
+
 .event-title {
+	position: absolute;
+	margin-top: 220px; 
 	padding-left: 20px;
 	font-family: "HelveticaNeue-Thin"; 
 	font-size: 20pt;
 }
 
+.event-heading {
+	position: absolute;
+	width: 240px; 
+	height: 50px; 
+	background-color: #555557; 
+	margin-top: 20px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
 .event-location {
+	position: absolute;
+	margin-top: 246px; 
 	margin-left: 20px; 
 	font-family: "HelveticaNeue-Bold"; 
 	font-style: 12pt; 
+	color: #ccc0ba;
+}
+
+.event-footing {
+	position: absolute;
+	width: 240px; 
+	height: 50px; 
+	background-color: #555557; 
+	margin-top: 220px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
+.event {
+	margin: 10px; 
+	height: 300px;
+	border-width: 1px; 
+	background-color: white;
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid #bbbaba;  
+	background-size: 400px 320px;
+    background-repeat: no-repeat;
+}
+
+#title {
+	margin-top: 20px;
+}
+
+#location {
+	margin-top: 46px;
+}
+
+.person-footing {
+	position: absolute;
+	width: 240px; 
+	height: 50px; 
+	background-color: #555557; 
+	margin-top: 220px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
+.person {
+	margin: 10px;
+	height: 300px; 
+	background-color: white; 
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid #bbbaba;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#weeknd {
+	background-image: url("images/theweeknd.jpg");
+}
+
+#pixies {
+	background-image: url("images/pixies.png");
+}
+
+#muse {
+	background-image: url("images/matt.png");
+}
+
+#mayer {
+	background-image: url("images/mayer.png");
+}
+
+#legend {
+	background-image: url("images/john.png");
+}
+
+#mccartney {
+	background-image: url("images/paul.png");
+}
+
+#asap {
+
 }
 
 .location-icon {
@@ -88,50 +281,83 @@ small {
 	border: 1px solid #b73e74;
 }
 
-.event-time {
+.event-date {
 	position: absolute;
-	margin-left: 280px; 
 	margin-top: 10px; 
+	margin-left: 20px; 
 	font-family: "HelveticaNeue-Light"; 
 	font-size: 16pt; 
+	color: #ff6b6d; 
+	background-color: white;
+	padding-left: 3px; 
+	padding-right: 3px;
 }
 
-.events-tab {
+.event-time {
 	position: absolute;
-	margin-left: 40px; 
-	font-family: "HelveticaNeue"; 
-	font-size: 10pt;
+	margin-top: 40px; 
+	margin-left: 20px;
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 12pt; 
+	color: #ff6b6d;
+	background-color: white;
+	padding-left: 3px; 
+	padding-right: 3px;
+}
+
+.box {
+	position: absolute;
+	widows: 200px; 
+	height: 200px;  
+	margin-top: 10px;
+	margin-left: 10px; 
 }
 
 .details-button {
 	position: absolute;
-	margin-left: 276px; 
-	margin-top: -58px; 
-	width: 90px; 
-	height: 70px; 
+	margin-left: 20px; 
+	margin-top: 146px; 
+	width: 120px; 
+	height: 96px; 
 }
 
-.events-tab-active {
-	position: absolute;
-	margin-left: 40px; 
+#active {
 	font-family: "HelveticaNeue-Bold"; 
-	font-size: 10pt;
 }
 
-.events-tab-underline {
+.events-tab {
 	position: absolute;
-	margin-left: 36px; 
-	margin-top: 19px; 
-	height: 2px; 
-	width: 50px; 
-	background-color: blue; 
+	margin-left: 20%; 
+	margin-top: -42px;
+	font-family: "HelveticaNeue"; 
+	font-size: 12pt;
+}
+
+.tab-indicator-a {
+	position: absolute;
+	height: 40px; 
+	width: 50%; 
+	margin-top: -50px;
+	margin-left: 50%;
+	background-color: white; 
+	box-shadow: inset 4px -4px 10px #dcdfe3;
+}
+
+.tab-indicator-b {
+	position: absolute;
+	height: 40px; 
+	width: 50%; 
+	margin-top: -50px;
+	background-color: white; 
+	box-shadow: inset -4px -4px 10px #dcdfe3;
 }
 
 .people-tab {
 	position: absolute;
-	margin-left: 120px; 
+	margin-left: 68%; 
+	margin-top: -42px; 
 	font-family: "HelveticaNeue"; 
-	font-size: 10pt;
+	font-size: 12pt;
 }
 
 .people-tab-active {
@@ -146,32 +372,12 @@ small {
 }
 
 .event-photo {
-	width: 275px;
+	position: absolute;
+	width: 100%;
 }
 
 .active {
 	background-color: transparent;
-}
-
-.person {
-	margin: 10px;
-	height: 270px; 
-	background-color: white; 
-	box-shadow: 3px 3px 4px #efefef; 
-	border: 1px solid black;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.header {
-	position: fixed;
-	background-color: white; 
-	opacity: .95; 
-	width: 102%; 
-	margin-left: -2px; 
-	padding-bottom: 10px;
-	border: 1px solid #545454; 
-	z-index: 2;
 }
 
 .light {
@@ -179,25 +385,15 @@ small {
 }
 
 .header-margin {
-	height: 140px; 
+	height: 100px; 
 	width: 100px; 
 	background-color: transparent;
 }
 
 .header-margin-search {
-	height: 170px; 
+	height: 100px; 
 	width: 100px; 
 	background-color: transparent;
-}
-
-.event {
-	margin: 10px; 
-	height: 210px;
-	border-width: 1px; 
-	background-color: #fff;
-	background-color: white; 
-	box-shadow: 3px 3px 4px #efefef; 
-	border: 1px solid #bbbaba; 
 }
 
 .subtext {
@@ -252,6 +448,15 @@ small {
 	background-size: 378px 378px;
 }
 
+#go-button {
+	margin-left: 60%;
+	color: #79f57f;
+}
+
+#find-date {
+	margin-left: 10%;
+}
+
 img{
 	padding-top: 10px;
 }
@@ -271,27 +476,142 @@ img{
 
 hr{
 	color: black;
-	border-top: 2px solid #000;
+	border-ftop: 2px solid #000;
 }
 
-.user-preview-profile{
+.user-preview-profile {
     width:125px;
     height:125px;
     padding:5px;
     float:left;
+}
 
+.profile-container {
+	width: 80%;
+	margin-left: 10%; 
+	margin-top: 40px;
+	height: 400px; 
+	background-color: black;
+}
+
+.artist-container {
+	width: 80%;
+	margin-left: 10%; 
+	height: 150px;
+}
+
+.find-date-header {
+	position: fixed;
+	width: 400px; 
+	height: 200px;
+	margin-top: -20px;
+	background-color: black;
+	clip: rect(0px, 400px, 200px, 0px);
+}
+
+.find-date-header-pic {
+	background-size: 100% 200%;
+}
+
+.favorite-artist-pic {
+	width: 80px;
+	height: 80px; 
+	margin-top: 8px;
+	padding-top: -10px; 
+	position: absolute;
+	box-shadow: 1px 1px 8px #adadad;
+	background-size: 100% 100%;
+	border-radius: 40px;
+}
+
+#faa {
+	margin-left: 20px; 
+	background-image: url("images/favorite-artists/Rakim.png"); 
+}
+
+#fab {
+	margin-left: 120px; 
+	background-image: url("images/favorite-artists/Wale.png"); 
+}
+
+#fac {
+	margin-left: 220px; 
+	background-image: url("images/favorite-artists/JonPardi.png");
+}
+
+.fav-desc {
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 10pt;
+	position: absolute;
+	margin-top: 90px; 
+	width: 80px;
+	text-align: center;
+}
+
+#fda {
+	margin-left: 20px; 
+}
+
+#fdb {
+	margin-left: 120px; 
+}
+
+#fdc {
+	margin-left: 220px; 
+}
+
+.attending-container {
+	width: 80%;
+	margin-left: 10%; 
+	height: 150px; 
+	background-color: yellow;
+}
+
+.attending-event {
+	position: absolute;
+	width: 80px;
+	height: 90px; 
+	margin-left: 20px;
+}
+
+.artist-title {
+	background-color: white; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 16pt; 
+	padding-left: 8px;
+}
+
+.people-going-description {
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 14pt;
+}
+
+.people-going {
+	text-align: center;
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 30pt;
+	position: absolute;
+	margin-top: 290px;
+	margin-left: 24%;
+	margin-right:24%;
+	padding: 8px;
+	width: 52%; 
+	color: #525252;
+	background-color: #fbfcfc;
+	border: 3px solid #ccc0ba;
 }
 
 .user-profile-pic{
-    width:150px;
-    height:150px;
-    padding:5px;
-    float:left;
+    width:70%;
+    margin-left:15%;
+    margin-top: 10%;
 }
 
 .event-button{
+	position: absolute;
+	margin-top: 220px;
 	width: 125px;
 	border: 2px solid;
 	border-radius: 0px;
-	color: #b73e74;
+	color: #ff6b6d;
 }
