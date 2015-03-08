@@ -1,6 +1,7 @@
-[{"id":0, "name":"The Weeknd", "location":"Bill Graham Civic Auditorium", "date":"March 7", "time:":"@9:00pm", "image":"images/theweeknd.jpg"},
-{"id":1, "name":"Rihanna", "location":"The Fillmore", "date":"March 14", "time:":"@6:00pm", "image":"images/theweeknd.jpg"},
-{"id":2, "name":"Paul McCartney", "location":"SAP San Jose", "date":"March 20", "time:":"@7:30pm", "image":"images/theweeknd.jpg"},
-{"id":3, "name":"Katy Perry", "location":"Shoreline Amphitheatre", "date":"March 28", "time:":"@7:00pm", "image":"images/theweeknd.jpg"},
-{"id":3, "name":"Kanye West", "location":"Shoreline Amphitheatre", "date":"April 1", "time:":"@11:00pm", "image":"images/theweeknd.jpg"},
-{"id":4, "name":"Taylor Swift", "location":"The Warfield", "date":"April 12", "time:":"@9:30pm", "image":"images/theweeknd.jpg"}]
+[{"id":0, "name":"The Weeknd", "location":"@Bill Graham Civic Auditorium", "date":"March 7", "time:":"@9:00pm", "image":"images/artist-pics/TheWeeknd.png"},
+{"id":1, "name":"Rihanna", "location":"@The Fillmore", "date":"March 14", "time:":"@6:00pm", "image":"images/artist-pics/Rihanna.png"},
+{"id":2, "name":"Paul McCartney", "location":"@SAP San Jose", "date":"March 20", "time:":"@7:30pm", "image":"images/artist-pics/PaulMcCartney.png"},
+{"id":3, "name":"Katy Perry", "location":"@AT&T Park", "date":"March 28", "time:":"@7:00pm", "image":"images/artist-pics/KatyPerry.png"},
+{"id":3, "name":"Kanye West", "location":"@Shoreline Amphitheatre", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/Kanye.png"},
+{"id":3, "name":"A$AP ROCKY", "location":"@The Fox", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/ASAP.png"},
+{"id":4, "name":"Taylor Swift", "location":"@The Warfield", "date":"April 12", "time:":"@9:30pm", "image":"images/artist-pics/TSwift.png"}]
