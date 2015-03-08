@@ -18,7 +18,7 @@ h1 {
 h2 {
   font-family: "HelveticaNeue-UltraLight"; 
   font-size: 24pt;
-  color: white;
+  color: #525252;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ h3 {
 .person-location {
 	font-family: "HelveticaNeue-Light";
 	font-size: 14pt;
-	color: white;
+	color: #525252;
 	text-align: center;
 }
 
@@ -117,14 +117,53 @@ small {
 	margin-top: 50px;
 }
 
+.person-attending-name {
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 22pt;
+	position: absolute;
+	margin-left: 120px; 
+	margin-top: 30px; 
+}
+
 .people-attending {
-	font-family: "HelveticaNeue-Light"; 
-	font-size: 16pt; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 14pt; 
 	padding-left: 8px;
 	background-color: #fbfcfc;
 	position: absolute;
-	margin-top: 180px;
+	margin-top: 182px;
 	width: 100%;
+}
+
+.prof-pic-small {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: 12px;
+	overflow: hidden;
+	border-radius: 40px;
+	box-shadow: 1px 1px 8px #adadad;
+}
+
+.prof-image-small {
+	width: 80px;
+	height: 90px;
+	margin-top: -10px;
+}
+
+#a1 {
+	margin-top: 210px;
+}
+
+.person-attending {
+	width: 102%;
+	height: 110px; 
+	margin-left: -2px;
+	background-color: white;
+	border: 1px solid #ccc0ba;
+	margin-top: -1px;
+
 }
 
 .event-title {
@@ -152,6 +191,20 @@ small {
 	font-family: "HelveticaNeue-Bold"; 
 	font-style: 12pt; 
 	color: #ccc0ba;
+}
+
+.attending-image-container {
+	width: 80px;
+	height: 80px; 
+	background-size: 100px 100px;
+	background-color: black;
+	position: absolute;
+}
+
+.attending-person-profile {
+	width: 80px; 
+	height: 80px; 
+
 }
 
 .event-footing {
@@ -496,7 +549,6 @@ hr{
 	margin-left: 10%; 
 	margin-top: 40px;
 	height: 400px; 
-	background-color: black;
 }
 
 .artist-container {
@@ -567,9 +619,7 @@ hr{
 
 .attending-container {
 	width: 80%;
-	margin-left: 10%; 
-	height: 150px; 
-	background-color: yellow;
+	margin-left: 10%;
 }
 
 .attending-event {
@@ -581,9 +631,34 @@ hr{
 
 .artist-title {
 	background-color: white; 
-	font-family: "HelveticaNeue-Light"; 
-	font-size: 16pt; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 12pt; 
 	padding-left: 8px;
+	color: #ff6b6d;
+}
+
+.event-going {
+	width: 100%; 
+	height: 100px; 
+	background-color: white;
+	margin-top: 12px;
+	box-shadow: 1px 1px 8px #adadad; 
+}
+
+.event-going-artist {
+	font-family: "HelveticaNeue"; 
+	font-size: 18px; 
+	margin-left: 20px;
+	padding-top: 24px;
+	color: #525252;
+}
+
+.event-going-date {
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 4px;
+	color: #525252; 
 }
 
 .people-going-description {
@@ -596,7 +671,7 @@ hr{
 	font-family: "HelveticaNeue-Bold"; 
 	font-size: 30pt;
 	position: absolute;
-	margin-top: 290px;
+	margin-top: 425px;
 	margin-left: 24%;
 	margin-right:24%;
 	padding: 8px;
@@ -614,7 +689,7 @@ hr{
 
 .event-button{
 	position: absolute;
-	margin-top: 220px;
+	margin-top: 350px;
 	width: 125px;
 	border: 2px solid;
 	border-radius: 0px;
