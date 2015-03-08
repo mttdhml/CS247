@@ -1,8 +1,297 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding-top: 50px; 
+     /* background-color: #dedede; /* #efefef	; */ 
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-family: "HelveticaNeue-Thin"; 
+  font-size: 20pt;
+  margin-left: 20px; 
+  margin-top: 30px;
+
+}
+
+h2 {
+  font-family: "HelveticaNeue-UltraLight"; 
+  font-size: 24pt;
+}
+
+h3 {
+	font-family: "HelveticaNeue"; 
+	font-size: 14pt;
+}
+
+small {
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 8pt; 
+}
+
+.event-title {
+	padding-left: 20px;
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 20pt;
+}
+
+.event-location {
+	margin-left: 20px; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-style: 12pt; 
+}
+
+.location-icon {
+	width: 15px;
+    height: 24px;
+    position: absolute;
+    margin-left: 20px; 
+    margin-top: -7px; 
+}
+
+.people-data {
+	position: absolute;
+	background-color: #f2f1f1;
+	border-radius: 20px; 
+	width: 140px;
+	height: 100px; 
+	margin-left: 120px; 
+	margin-top: 10px; 
+}
+
+.people-icon {
+	width: 54px;
+	height: 54px;
+}
+
+.people-count {
+	position: absolute;
+	margin-left: 54px; 
+	margin-top: 10px; 
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 22pt;
+}
+
+.people-description {
+	text-align: center;
+	margin-top: 4px;
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 12pt;
+}
+
+.event-image {
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50px; 
+	margin-left: 10px;
+	margin-top: 10px; 
+	background-color: black; 
+	background-image: url("pic-test-2.png");
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid #b73e74;
+}
+
+.event-time {
+	position: absolute;
+	margin-left: 280px; 
+	margin-top: 10px; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 16pt; 
+}
+
+.events-tab {
+	position: absolute;
+	margin-left: 40px; 
+	font-family: "HelveticaNeue"; 
+	font-size: 10pt;
+}
+
+.details-button {
+	position: absolute;
+	margin-left: 276px; 
+	margin-top: -58px; 
+	width: 90px; 
+	height: 70px; 
+}
+
+.events-tab-active {
+	position: absolute;
+	margin-left: 40px; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 10pt;
+}
+
+.events-tab-underline {
+	position: absolute;
+	margin-left: 36px; 
+	margin-top: 19px; 
+	height: 2px; 
+	width: 50px; 
+	background-color: blue; 
+}
+
+.people-tab {
+	position: absolute;
+	margin-left: 120px; 
+	font-family: "HelveticaNeue"; 
+	font-size: 10pt;
+}
+
+.people-tab-active {
+	position: absolute;
+	margin-left: 120px; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 10pt;
+}
+
+.people-tab-underline {
+
+}
+
+.event-photo {
+	width: 275px;
+}
+
+.active {
+	background-color: transparent;
+}
+
+.person {
+	margin: 10px;
+	height: 270px; 
+	background-color: white; 
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid black;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header {
+	position: fixed;
+	background-color: white; 
+	opacity: .95; 
+	width: 102%; 
+	margin-left: -2px; 
+	padding-bottom: 10px;
+	border: 1px solid #545454; 
+	z-index: 2;
+}
+
+.light {
+	font-color: #ccc;
+}
+
+.header-margin {
+	height: 140px; 
+	width: 100px; 
+	background-color: transparent;
+}
+
+.header-margin-search {
+	height: 170px; 
+	width: 100px; 
+	background-color: transparent;
+}
+
+.event {
+	margin: 10px; 
+	height: 210px;
+	border-width: 1px; 
+	background-color: #fff;
+	background-color: white; 
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid #bbbaba; 
+}
+
+.subtext {
+	margin-top: 16.1px;
+}
+
+.secondary-text {
+	padding-top: 40px; 
+}
+
+.person-data {
+	position: absolute;
+	z-index: 0;
+	width: 378px; 
+	height: 78px; 
+	margin-top: 190px;
+	background-color: white; 
+	opacity: .95; 
+}
+.name {
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 23pt; 
+	margin-left: 20px;
+}
+#custom-input {
+	width: 100%; 
+}
+#john {
+	background-image: url("john.png");
+}
+#paul {
+	background-image: url("paul.png");
+}
+#mayer {
+	background-image: url("mayer.png");
+}
+#weeknd {
+	background-image: url("weeknd.png");
+}
+
+#matt {
+	background-image: url("matt.png");
+}
+
+#mattd {
+	background-image: url("images/matt.jpg"); 
+	background-size: 378px 378px;
+}
+
+#jed {
+	background-image: url("images/jed.jpg"); 
+	background-size: 378px 378px;
+}
+
+img{
+	padding-top: 10px;
+}
+
+.row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	
+
+.find-date-image{
+	padding-left: 5px;
+	float: left;
+	padding-right: 10px;
+
+}
+
+hr{
+	color: black;
+	border-top: 2px solid #000;
+}
+
+.user-preview-profile{
+    width:125px;
+    height:125px;
+    padding:5px;
+    float:left;
+
+}
+
+.user-profile-pic{
+    width:150px;
+    height:150px;
+    padding:5px;
+    float:left;
+}
+
+.event-button{
+	width: 125px;
+	border: 2px solid;
+	border-radius: 0px;
+	color: #b73e74;
 }

@@ -1,72 +1,82 @@
-<!doctype html>
+<!DOCTYPE html> 
 
-<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+
 <head>
-	<title>FashionCents</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/header.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href="/css/slystyles.css" rel="stylesheet">
-	<link href="/css/index.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic|Playfair+Display:400italic|Unna' rel='stylesheet' type='text/css'>
-
-
-
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<body>
+<html> 
+    <body> 
+    <!--
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Events</a></li>
+        <li role="presentation"><a href="find-people.html">People</a></li>
+    </ul>
+    -->
+        <div class="events-tab-active">Events</div>
+        <div class="people-tab">People</div>
+        <h1 class="text-center"> Events Near You </h1>
+        <div class="col-lg-6">
+            <div class="input-group" id="custom-input">
+                <input type="text" class="form-control" placeholder="Search Artists, Venues, and Events">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                    Search</button>
+                </span>
+            </div>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> 
+                The Pixies 
+                <img src="icons/location" class="location-icon"></img> 
+                <small class="subtext">The Fillmore</small>
+            </h3>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> 
+                Muse 
+                <img src="icons/location" class="location-icon"></img> 
+                <small>Secondary text</small>
+            </h3>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> 
+                The Weeknd
+                <img src="icons/location" class="location-icon"></img> 
+                <small>Bill Graham Civic Auditorium </small>
+            </h3>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> 
+                John Mayer Trio 
+                <img src="icons/location" class="location-icon"></img> 
+                <small> SAP Center </small>
+            </h3>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> 
+                Paul McCartney 
+                <img src="icons/location" class="location-icon"></img> 
+                <small> Shoreline Amphitheatre</small>
+            </h3>
+        </div>
+        <div class="event"> 
+            <h3 class="text-center"> John Legend 
+                <img src="icons/location" class="location-icon"></img> 
+                <small> Sweetwater Music Hall </small>
+            </h3>
+        </div>
+        <div class="event" id="ASAP"> 
+            <h3 class="text-center"> A$AP ROCKY 
+                <small> Santa Cruz Civic Center </small>
+                <img src="icons/location" class="location-icon"></img> 
+            </h3>
+        </div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-
-	<div id="banner" style="height: 200px; display: block;">
-		<div class="frontpage" style="background-image: url(http://i58.tinypic.com/ip2oav.jpg); left: 0px; top: 0px;">
-		</div>
-	</div>
-
-	<div class="instructions">
-		<div class="content"> 
-			<h1>HOW IT WORKS:</h1>
-			<p><img src="http://i61.tinypic.com/2u9pemh.jpg">Upload a picture of a piece of clothing that you want the community to help you find a substitute for.</p></img>
-			<p><img src="http://i58.tinypic.com/xcn7uv.jpg">Check back to see what options Fashion Cents users have posted for your uploads.</p>
-			<p><img src="http://i62.tinypic.com/2n8vt4k.jpg">Celebrate! Give back to the community by finding substitutes for others.</p>
-			
-		</div>
-	</div>
-
-
-
-	<div class="container">
-		<div class = "form-group">
-			<h1>LOGIN:</h1>
-			<form action="/login" enctype="multipart/form-data" method="get">
-				<input type="text" class="upload-form form-control" id="user" name="user" placeholder="username"> <br>
-				<input type="password" class="upload-form form-control" id="password" name="password" placeholder="password"> <br>
-				<input type="submit" class="upload-form form-control" value="SUBMIT" id="login">
-			</form>
-			<a href="/loginGuest" class="btn btn-primary" id="try-button">TRY IT OUT </a>
-			<a href="/createAccount" class="btn btn-primary" id="register-button">REGISTER</a>
-		</div>	
-		<br>
-		
-		
-	</div>
-
-	<script>
-		/*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		//production version
-		ga('create', 'UA-48670740-1', 'slystyles.herokuapp.com');
-		//testing version
-		//ga('create', 'UA-48670740-1', { 'cookieDomain': 'none'});
-		
-		ga('send', 'pageview');*/
-	</script>
-</body>
+        </div>
+    </body>
 </html>
