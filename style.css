@@ -91,20 +91,48 @@ small {
 	margin-top: 30px;
 }
 
+.find-date-title-frame {
+	position: absolute;
+	width: 240px; 
+	height: 50px; 
+	background-color: #555557; 
+	margin-top: 20px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
+.find-date-event-title {
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 20pt;
+	position: absolute;
+	margin-left: 20px;
+}
+
+.find-date-event-location {
+	font-family: "HelveticaNeue-Bold"; 
+	font-style: 12pt; 
+	color: #ccc0ba;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+.people-attending {
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 16pt; 
+	padding-left: 8px;
+	background-color: #fbfcfc;
+	position: absolute;
+	margin-top: 180px;
+	width: 100%;
+}
+
 .event-title {
 	position: absolute;
 	margin-top: 220px; 
 	padding-left: 20px;
 	font-family: "HelveticaNeue-Thin"; 
 	font-size: 20pt;
-}
-
-#title {
-	margin-top: 20px;
-}
-
-#location {
-	margin-top: 46px;
 }
 
 .event-heading {
@@ -145,6 +173,14 @@ small {
 	border: 1px solid #bbbaba;  
 	background-size: 400px 320px;
     background-repeat: no-repeat;
+}
+
+#title {
+	margin-top: 20px;
+}
+
+#location {
+	margin-top: 46px;
 }
 
 .person-footing {
@@ -461,8 +497,81 @@ hr{
 .artist-container {
 	width: 80%;
 	margin-left: 10%; 
+	height: 150px;
+}
+
+.find-date-header {
+	position: fixed;
+	width: 400px; 
+	height: 200px;
+	margin-top: -20px;
+	background-color: black;
+	clip: rect(0px, 400px, 200px, 0px);
+}
+
+.find-date-header-pic {
+	background-size: 100% 200%;
+}
+
+.favorite-artist-pic {
+	width: 80px;
+	height: 80px; 
+	margin-top: 8px;
+	padding-top: -10px; 
+	position: absolute;
+	box-shadow: 1px 1px 8px #adadad;
+	background-size: 100% 100%;
+	border-radius: 40px;
+}
+
+#faa {
+	margin-left: 20px; 
+	background-image: url("images/favorite-artists/Rakim.png"); 
+}
+
+#fab {
+	margin-left: 120px; 
+	background-image: url("images/favorite-artists/Wale.png"); 
+}
+
+#fac {
+	margin-left: 220px; 
+	background-image: url("images/favorite-artists/JonPardi.png");
+}
+
+.fav-desc {
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 10pt;
+	position: absolute;
+	margin-top: 90px; 
+	width: 80px;
+	text-align: center;
+}
+
+#fda {
+	margin-left: 20px; 
+}
+
+#fdb {
+	margin-left: 120px; 
+}
+
+#fdc {
+	margin-left: 220px; 
+}
+
+.attending-container {
+	width: 80%;
+	margin-left: 10%; 
 	height: 150px; 
-	background-color: blue;
+	background-color: yellow;
+}
+
+.attending-event {
+	position: absolute;
+	width: 80px;
+	height: 90px; 
+	margin-left: 20px;
 }
 
 .artist-title {
@@ -470,7 +579,6 @@ hr{
 	font-family: "HelveticaNeue-Light"; 
 	font-size: 16pt; 
 	padding-left: 8px;
-
 }
 
 .people-going-description {
