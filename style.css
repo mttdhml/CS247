@@ -18,12 +18,21 @@ h1 {
 h2 {
   font-family: "HelveticaNeue-UltraLight"; 
   font-size: 24pt;
+  color: white;
+  text-align: center;
 }
 
 h3 {
 	font-family: "HelveticaNeue"; 
 	font-size: 14pt;
 	color: #fbfcfc;
+}
+
+.person-location {
+	font-family: "HelveticaNeue-Light";
+	font-size: 14pt;
+	color: white;
+	text-align: center;
 }
 
 .header {
@@ -431,7 +440,7 @@ img{
 
 hr{
 	color: black;
-	border-top: 2px solid #000;
+	border-ftop: 2px solid #000;
 }
 
 .user-preview-profile {
@@ -439,6 +448,29 @@ hr{
     height:125px;
     padding:5px;
     float:left;
+}
+
+.profile-container {
+	width: 80%;
+	margin-left: 10%; 
+	margin-top: 40px;
+	height: 400px; 
+	background-color: black;
+}
+
+.artist-container {
+	width: 80%;
+	margin-left: 10%; 
+	height: 150px; 
+	background-color: blue;
+}
+
+.artist-title {
+	background-color: white; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 16pt; 
+	padding-left: 8px;
+
 }
 
 .people-going-description {
@@ -462,10 +494,9 @@ hr{
 }
 
 .user-profile-pic{
-    width:150px;
-    height:150px;
-    padding:5px;
-    float:left;
+    width:70%;
+    margin-left:15%;
+    margin-top: 10%;
 }
 
 .event-button{
