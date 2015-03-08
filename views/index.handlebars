@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 
 <html> 
@@ -29,54 +29,16 @@
                 </span>
             </div>
         </div>
-        <div class="event"> 
+        {{#each events}}
+            <div class="event"> 
             <h3 class="text-center"> 
-                The Pixies 
-                <img src="icons/location" class="location-icon"></img> 
-                <small class="subtext">The Fillmore</small>
+                <a href="/event/{{id}}"> {{name}} </a>
+                <img src="/icons/location" class="location-icon"></img> 
+                <small class="subtext">{{location}}</small>
             </h3>
-        </div>
-        <div class="event"> 
-            <h3 class="text-center"> 
-                Muse 
-                <img src="icons/location" class="location-icon"></img> 
-                <small>Secondary text</small>
-            </h3>
-        </div>
-        <div class="event"> 
-            <h3 class="text-center"> 
-                The Weeknd
-                <img src="icons/location" class="location-icon"></img> 
-                <small>Bill Graham Civic Auditorium </small>
-            </h3>
-        </div>
-        <div class="event"> 
-            <h3 class="text-center"> 
-                John Mayer Trio 
-                <img src="icons/location" class="location-icon"></img> 
-                <small> SAP Center </small>
-            </h3>
-        </div>
-        <div class="event"> 
-            <h3 class="text-center"> 
-                Paul McCartney 
-                <img src="icons/location" class="location-icon"></img> 
-                <small> Shoreline Amphitheatre</small>
-            </h3>
-        </div>
-        <div class="event"> 
-            <h3 class="text-center"> John Legend 
-                <img src="icons/location" class="location-icon"></img> 
-                <small> Sweetwater Music Hall </small>
-            </h3>
-        </div>
-        <div class="event" id="ASAP"> 
-            <h3 class="text-center"> A$AP ROCKY 
-                <small> Santa Cruz Civic Center </small>
-                <img src="icons/location" class="location-icon"></img> 
-            </h3>
-        </div>
-
+            </div>
+        {{/each}}
+       
         </div>
     </body>
 </html>
