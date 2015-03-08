@@ -1,3 +1,3 @@
-{ "id": 0, "login": "matt", "password": "matt", "location": "Stanford", "interests":"Chilling, Skateboarding", "favorite-artists":"", "name": "Matt", "imageURL":"images/matt.jpg"},
-{ "id": 1, "login": "jed", "password": "tan", "location": "SF Bay", "interests":"Vinyl, Basketball, Video Games", "favorite-artists":"Nas, Rakim, Zac Brown Band, Eric Church, Wale", "name": "Jed", "imageURL":"images/jed.jpg"}
+[{ "id": 0, "login": "matt", "age":23, "password": "matt", "location": "Stanford", "interests":"Chilling, Skateboarding", "favorite-artists":"", "name": "Matt", "imageURL":"images/matt.jpg"},
+{ "id": 1, "login": "jed", "age":21, "password": "tan", "location": "SF Bay", "interests":"Vinyl, Basketball, Video Games", "favorite-artists":"Nas, Rakim, Zac Brown Band, Eric Church, Wale", "name": "Jed", "imageURL":"images/jed.jpg"}]
 	
