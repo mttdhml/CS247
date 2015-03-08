@@ -171,8 +171,9 @@ small {
 	background-color: white;
 	box-shadow: 3px 3px 4px #efefef; 
 	border: 1px solid #bbbaba;  
-	background-size: 400px 320px;
     background-repeat: no-repeat;
+    clip: rect(0px, 400px, 300px, 0px);
+    overflow: hidden;
 }
 
 #title {
@@ -201,6 +202,10 @@ small {
 	border: 1px solid #bbbaba;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.event-bg-image {
+	margin-top:-10px;
 }
 
 #weeknd {
