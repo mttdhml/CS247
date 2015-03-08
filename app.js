@@ -11,10 +11,11 @@ var users = require('./routes/users');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/cs247');
+var db = monk('mongodb://jedtan:cs247@ds053251.mongolab.com:53251/cs247');
+/*var db = monk('localhost:27017/cs247');
 if(process.env.PROD_MONGODB){
   db = monk(process.env.PROD_MONGODB);
-}
+}*/
 
 var app = express();
 
