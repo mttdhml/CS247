@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>People Going to The Weeknd</title>
+<title>People Going to {{event.name}}</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -10,46 +10,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 </HEAD>
 <BODY BGCOLOR="FFFFFF" style="padding-top:70px">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  		<div class="container" >
-  			<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-  					<span class="sr-only">Toggle navigation</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  				<a class="navbar-brand" href="#">Company</a>
-  			</div>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Company</a>
+        </div>
 
-  			<!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
 
-  			<div class="collapse navbar-collapse navbar-ex1-collapse">
-  						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 <li>
                   <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
                 </li>
-  							<li>
-  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
-  							</li>
-  							<li>
-  								<a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
-  							</li>
-  							<li>
-  								<a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
-  							</li>
-  						</ul>
-  			</div><!-- /.navbar-collapse -->
-  		</div>
-  	</nav>
+                <li>
+                  <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
+                </li>
+                <li>
+                  <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                </li>
+                <li>
+                  <a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
+                </li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
 
+    <div class="find-date-header">
+      <div class="find-date-title-frame"></div>
+      <h3 class="find-date-event-title">{{event.name}}</h3>
+      <div class="find-date-event-location">{{event.location}}</div>
+      <img src="/{{event.image}}" class="find-date-header-pic"></img>
+    </div>
+    <div class="people-attending">Attending</div>
+   
+    <div class="person-attending" id="a1">
+       <a href = "/user/{{first.id}}">
+        <div class="prof-pic-small">
+          <img src="images/people/1.png" class="prof-image-small"></img>
+        </div>
+        <div class="person-attending-name">{{first.name}}</div>
+      </div>
+       </a>
+    </div>
+ 
+
+    {{#each users}}
+    
+    <div class="person-attending">
+        <a href="/user/{{id}}">
+        <div class="prof-pic-small">
+          <img src="images/people/4.png" class="prof-image-small"></img>
+        </div>
+        <div class="person-attending-name">{{name}}</div>
+      </div>
+      </a>
+    </div>
+    {{/each}}
+
+<!--
 <div class="container">
   <div class="row">
-<img class="find-date-image" width="150px" src="/{{event.image}}">
-<h2>{{event.name}}</h2>
-<h5>{{event.location}}<br/>
-	{{event.date}} {{event.time}}<br/>&nbsp;</h5>
+<img class="find-date-image" width="150px" src="images/theweeknd.jpg">
+
+
+<H2>The Weeknd</H2>
+<H5>Bill Graham Civic Auditorium<br/>
+  March 7, 2014 9:00 PM<br/>&nbsp;</h5>
   <h3> People Going to this Event </h3>
   <hr/>
   </div>
@@ -68,10 +103,10 @@
 
 
 </div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="/javascripts/find_date.js"></script>
+<script src="js/find_date.js"></script>
 </BODY>
 </HTML>
 

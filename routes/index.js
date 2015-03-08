@@ -12,6 +12,16 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get('/find-people', function(req, res, next) {
+	var db = req.db;
+	var collection = db.get('users');
+	collection.find({},{},function(e,docs){
+        res.render('find-people', {
+            "users" : docs
+        });
+    });
+});
+
 router.get('/user/:userID', function(req, res) {
     var db = req.db;
     var userID = req.params.userID;
@@ -54,10 +64,19 @@ router.get('/users', function(req, res) {
 router.get('/find-date/:eventID', function(req, res) {
     var db = req.db;
     var eventID = req.params.eventID;
-    var collection = db.get('events');
-    collection.find({"id":parseInt(eventID)},{},function(e,events){
-        res.render('find-date', {
-            "event" : events[0]
+    var collection = db.get('users');
+    var event_collection = db.get('events');
+    event_collection.find({"id":parseInt(eventID)},{},function(e,events){
+    	collection.find({"attending": parseInt(eventID)},{},function(e,users){
+    		console.log(events);
+    		console.log(users);
+    		var first = users[0];
+    		users.splice(0,1);
+        	res.render('find-date', {
+        		"first": first,
+            	"users" : users,
+            	"event": events[0]
+        	});
         });
     });
 });

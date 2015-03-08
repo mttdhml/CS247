@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<html> 
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Company</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right"  id="dropdown" >
+                <li>
+                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                </li>
+                <li>
+                    <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp;My Profile</a>
+                </li>
+                <li>
+                    <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                </li>
+                <li>
+                    <a href="logout.html" target="_blank">
+                    <i class="fa fa-power-off"></i>&nbsp; Logout</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header">  
+        <div class="tab-indicator-b"></div>
+        <a href="/">
+            <div class="events-tab">Events</div>
+        </a>
+        <div class="people-tab" id="active">People</div>
+    </div>
+    <div class="header-margin"></div>
+    {{#each users}}
+    <a href="/user/{{id}}">
+        <div class="person" id="jed"> 
+            <div class="person-footing"></div> 
+            <div class="person-name">{{name}}</div>
+        </div>
+    </a>
+    {{/each}}
+    <a href="profile-matt.html">
+        <div class="person" id="mattd"> 
+            <div class="person-footing"></div> 
+            <div class="person-name">Matt Duhamel</div>
+        </div>
+    </a>
+    <div class="person" id="john"> 
+        <div class="person-data">
+            <div class="name"> John </div>
+        </div>  
+    </div>
+    <div class="person" id="paul">
+        <div class="person-data">
+             <div class="name"> Paul </div>
+        </div>   
+    </div>
+    <div class="person" id="mayer">  
+        <div class="person-data">
+             <div class="name"> Mayer </div>
+        </div> 
+    </div>
+    <div class="person" id="weeknd">   
+        <div class="person-data">
+             <div class="name"> Weeknd </div>
+        </div>
+    </div>
+    <div class="person" id="matt">   
+        <div class="person-data">
+             <div class="name"> Matt </div>
+        </div>
+    </div>
+    </body>
+</html>

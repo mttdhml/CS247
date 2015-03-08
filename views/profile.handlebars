@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Company</a>
+          <a class="navbar-brand" href="/">Company</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,27 +43,65 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
+    <div class="profile-container">
+      <img class="user-profile-pic img-circle" src="images/jed.jpg"> 
+      <H2>{{user.name}}</H2>
+      <div class="person-location"> SF Bay </div>
+    </div>
+    <div class="artist-container">
+      <div class="artist-title">Favorite Artists</div>
+      <div class="favorite-artist-pic" id="faa"></div>
+      <div class="favorite-artist-pic" id="fab"></div>
+      <div class="favorite-artist-pic" id="fac"></div>
+      <div class="fav-desc" id="fda">Rakim</div>
+      <div class="fav-desc" id="fdb">Wale</div>
+      <div class="fav-desc" id="fdc">Jon Pardi</div>
+    </div>
+    <div class="attending-container">
+      <div class="artist-title"> Attending </div>
+      <div class="event-going">
+        <div class="event-going-artist">Toby Keith and Eli Young Band</div>
+        <div class="event-going-date">May 15 @6:00pm</div>
+      </div>
+      <div class="event-going">
+        <div class="event-going">
+        <div class="event-going-artist">J. Cole, Big Sean, Jeremih, YG</div>
+        <div class="event-going-date">May 29 @9:00pm</div>
+      </div>
+      </div>
+      <div class="event-going">
+        <div class="event-going">
+        <div class="event-going-artist">Ziggy Marley</div>
+        <div class="event-going-date">April 12 @4:00pm</div>
+      </div>
+      </div>
+    </div> 
 
+
+
+<!--
 <div class="container">
 
 <div class="row">
- <img class="user-profile-pic img-circle" src="/{{user.imageURL}}"> 
-<H2>{{user.name}}, {{user.age}}</H2>
+ 
+ 
+<img class="user-profile-pic img-circle" src="images/jed.jpg"> 
+
+<H2>Jed, 21</H2>
 </div>
 <div class="row">
-<p> <strong>Location: </strong> {{user.location}} </p>
-<p> <strong>Interests: </strong> {{user.interests}}</p>
-<p> <strong>Favorite Artists: </strong> {{user.favorite-artists}}</p>
+<p> <strong>Location: </strong> SF Bay </p>
+<p> <strong> Interests: </strong> Vinyl, Basketball, Video Games</p>
+<p> <strong> Favorite Artists: </strong> Nas, Rakim, Zac Brown Band, Eric Church, Wale</p>
 </div>
 <div class="row text-center">
 <h2> Going To: </h2>
 </div>
 <div class="row">
 <ul>
-  {{#each events}}
-  <li><a href="event.html"> {{name}}, {{date}}</a></li>
-  {{/each}}
-  
+  <li><a href="event.html"> The Weeknd, March 7, 2015</a></li>
+  <li>Toby Keith and Eli Young Band, May 29, 2015</li>
+  <li>J. Cole, Big Sean, Jeremih, YG, July 15, 2015</li>
 </ul>
 
 </div>
@@ -71,7 +109,7 @@
 <div class="col-sm-4 text-center"> 
 <a href="#" id="invite" role="button" class="event-button btn btn-large">Invite to Go!</a>
 </div>
-
+-->
  
 
 
@@ -80,12 +118,9 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="/javascripts/profile.js"></script>
+<script src="js/profile.js"></script>
 </BODY>
 </HTML>
-
-
-
 
 
 
