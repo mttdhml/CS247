@@ -11,34 +11,71 @@
 
 <html> 
     <body> 
-    <!--
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Events</a></li>
-        <li role="presentation"><a href="find-people.html">People</a></li>
-    </ul>
-    -->
-        <div class="events-tab-active">Events</div>
-        <div class="people-tab">People</div>
-        <h1 class="text-center"> Events Near You </h1>
-        <div class="col-lg-6">
-            <div class="input-group" id="custom-input">
-                <input type="text" class="form-control" placeholder="Search Artists, Venues, and Events">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                    Search</button>
-                </span>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Company</a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right"  id="dropdown" >
+                <li>
+                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                </li>
+                            <li>
+                                <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
+                            </li>
+                            <li>
+                                <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                            </li>
+                            <li>
+                                <a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
+                            </li>
+                        </ul>
+            </div><!-- /.navbar-collapse -->
         </div>
-        {{#each events}}
-            <div class="event"> 
-            <h3 class="text-center"> 
-                <a href="/event/{{id}}"> {{name}} </a>
-                <img src="/icons/location" class="location-icon"></img> 
-                <small class="subtext">{{location}}</small>
-            </h3>
-            </div>
-        {{/each}}
-       
+    </nav>
+    <div class="header"> 
+        <div class="tab-indicator-a"></div>
+        <div class="events-tab" id="active">Events</div>
+        <a href="find-people.html">
+            <div class="people-tab">People</div>
+        </a>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Find events near you...">
+        </div>
+    </div>
+
+        <div class="header-margin-search"></div> 
+             {{#each events}}
+            <a href="/event/{{id}}">
+                <div class="event"> 
+                    <div class="event-footing"></div>
+                    <div class="event-date">{{date}}</div>
+                    <div class="event-time">{{time}}</div>
+                    <h3 class="event-title"> {{name}} </h3>
+                    <div class="event-location">@ {{location}} </div>
+                    <img src="/{{image}}" class="event-bg-image"></img>
+                </div>  
+            </a>
+            {{/each}}
+
+
+
+
         </div>
     </body>
 </html>
+
+
+
+

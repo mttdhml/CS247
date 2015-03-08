@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 </HEAD>
 <BODY BGCOLOR="FFFFFF" style="padding-top:70px">
@@ -46,10 +46,10 @@
 
 <div class="container">
   <div class="row">
-<img class="find-date-image" width="150px" src="images/theweeknd.jpg">
-<H2>The Weeknd</H2>
-<H5>Bill Graham Civic Auditorium<br/>
-	March 7, 2014 9:00PM<br/>&nbsp;</h5>
+<img class="find-date-image" width="150px" src="/{{event.image}}">
+<h2>{{event.name}}</h2>
+<h5>{{event.location}}<br/>
+	{{event.date}} {{event.time}}<br/>&nbsp;</h5>
   <h3> People Going to this Event </h3>
   <hr/>
   </div>
@@ -71,7 +71,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/find_date.js"></script>
+<script src="/javascripts/find_date.js"></script>
 </BODY>
 </HTML>
 

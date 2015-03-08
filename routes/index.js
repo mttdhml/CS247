@@ -17,10 +17,14 @@ router.get('/user/:userID', function(req, res) {
     var userID = req.params.userID;
     console.log("userID is " + userID);
     var collection = db.get('users');
+    var event_collection = db.get('events');
     collection.find({"id":parseInt(userID)},{},function(e,user){
-        console.log(user);
-        res.render('profile', {
-            "user" : user[0]
+    	event_collection.find({"id": { $in: user[0].attending}},{},function(e,events){
+    		console.log(events);
+        	res.render('profile', {
+            	"user" : user[0],
+            	"events": events
+        	});
         });
     });
 });
@@ -31,7 +35,8 @@ router.get('/event/:eventID', function(req, res) {
     var collection = db.get('events');
     collection.find({"id":parseInt(eventID)},{},function(e,events){
         res.render('event', {
-            "event" : events[0]
+            "event" : events[0],
+            "id": eventID
         });
     });
 });
@@ -46,11 +51,14 @@ router.get('/users', function(req, res) {
     });
 });
 
-router.get('/find-date', function(req, res) {
+router.get('/find-date/:eventID', function(req, res) {
     var db = req.db;
-    var collection = db.get('users');
-    collection.find({},{},function(e,docs){
-        res.render('find-date');
+    var eventID = req.params.eventID;
+    var collection = db.get('events');
+    collection.find({"id":parseInt(eventID)},{},function(e,events){
+        res.render('find-date', {
+            "event" : events[0]
+        });
     });
 });
 
