@@ -34,7 +34,7 @@
                   <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
                 </li>
                 <li>
-                  <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                  <a href="/settings" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
                 </li>
                 <li>
                   <a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
@@ -55,7 +55,7 @@
     <div class="person-attending" id="a1">
        <a href = "/user/{{first.id}}">
         <div class="prof-pic-small">
-          <img src="images/people/1.png" class="prof-image-small"></img>
+          <img src="/{{first.imageURL}}" class="prof-image-small"></img>
         </div>
         <div class="person-attending-name">{{first.name}}</div>
       </div>
@@ -68,7 +68,7 @@
     <div class="person-attending">
         <a href="/user/{{id}}">
         <div class="prof-pic-small">
-          <img src="images/people/4.png" class="prof-image-small"></img>
+          <img src="/{{imageURL}}" class="prof-image-small"></img>
         </div>
         <div class="person-attending-name">{{name}}</div>
       </div>

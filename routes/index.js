@@ -12,6 +12,10 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get('/settings', function(req, res, next) {
+	res.render('settings');
+});
+
 router.get('/find-people', function(req, res, next) {
 	var db = req.db;
 	var collection = db.get('users');

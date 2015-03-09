@@ -34,7 +34,7 @@
                   <a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
                 </li>
                 <li>
-                  <a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+                  <a href="/settings" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
                 </li>
                 <li>
                   <a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
@@ -44,9 +44,9 @@
       </div>
     </nav>
     <div class="profile-container">
-      <img class="user-profile-pic img-circle" src="images/jed.jpg"> 
+      <img class="user-profile-pic img-circle" src="/{{user.imageURL}}"> 
       <H2>{{user.name}}</H2>
-      <div class="person-location"> SF Bay </div>
+      <div class="person-location"> {{user.location}} </div>
     </div>
     <div class="artist-container">
       <div class="artist-title">Favorite Artists</div>
@@ -57,25 +57,19 @@
       <div class="fav-desc" id="fdb">Wale</div>
       <div class="fav-desc" id="fdc">Jon Pardi</div>
     </div>
+    
     <div class="attending-container">
-      <div class="artist-title"> Attending </div>
+       <div class="artist-title"> Attending </div>
+      {{#each events}}
       <div class="event-going">
-        <div class="event-going-artist">Toby Keith and Eli Young Band</div>
-        <div class="event-going-date">May 15 @6:00pm</div>
+        <a href="/event/{{id}}">
+        <div class="event-going-artist">{{name}}</div>
+        <div class="event-going-date">{{date}} {{time:}}</div>
+      </a>
       </div>
-      <div class="event-going">
-        <div class="event-going">
-        <div class="event-going-artist">J. Cole, Big Sean, Jeremih, YG</div>
-        <div class="event-going-date">May 29 @9:00pm</div>
-      </div>
-      </div>
-      <div class="event-going">
-        <div class="event-going">
-        <div class="event-going-artist">Ziggy Marley</div>
-        <div class="event-going-date">April 12 @4:00pm</div>
-      </div>
-      </div>
+      {{/each}}
     </div> 
+    
 
 
 
@@ -118,7 +112,7 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/profile.js"></script>
+<script src="/javascripts/profile.js"></script>
 </BODY>
 </HTML>
 
