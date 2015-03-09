@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 </HEAD>
 <BODY BGCOLOR="FFFFFF">
@@ -20,7 +20,7 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				</button>
-  				<a class="navbar-brand" href="#">Company</a>
+  				<a class="navbar-brand" href="/">Company</a>
   			</div>
 
   			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,13 +28,13 @@
   			<div class="collapse navbar-collapse navbar-ex1-collapse">
   						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 <li>
-                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                  <a href="/matches" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
                 </li>
   							<li>
-  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
+  								<a href="/user/{{me}}" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
   							</li>
   							<li>
-  								<a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+  								<a href="/settings" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
   							</li>
   							<li>
   								<a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
@@ -50,12 +50,12 @@
  <h2>My Matches</h2>
 </div>
  <div class="user-preview row">
-    <a href="chat-matt.html">
+    <a href="/html/chat-matt.html">
     <img class="user-preview-profile img-circle" src="images/matt.jpg"> 
     <h3>Matt, 23</h3>
     <h4>Event: The Weeknd, March 7, 2015</h4></a></div>
   <div class="user-preview row">
-    <a href="chat-jed.html">
+    <a href="/html/chat-jed.html">
     <img class="user-preview-profile img-circle" src="images/jed.jpg"> 
     <h3>Jed, 21</h3>
     <h4>Event: Toby Keith and Eli Young Band, May 29, 2015 </h4></a></div>
