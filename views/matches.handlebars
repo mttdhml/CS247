@@ -47,18 +47,28 @@
 <div class="container">
 
 <div class="row text-center">
+ <h2>My Invitations</h2>
+</div>
+   <a href="/user/{{id}}" class="request" id="1">
+                <div class="invitation" id="1"> 
+                    <div class="event-date">Matt</div>
+                    <div class="accept-reject"><h2><a href="#" class="accept" id="1"><span class="glyphicon glyphicon-ok-sign green" aria-hidden="true"></a>&nbsp;</span><a href="#" class="decline" id="1"><span class="glyphicon glyphicon-remove-sign red" aria-hidden="true"></a></h2></span></div>
+                    <img src="/images/matt.jpg" class="event-bg-image"></img>
+                </div>  
+  </a>
+
+
+<div class="row text-center">
  <h2>My Matches</h2>
 </div>
- <div class="user-preview row">
-    <a href="/html/chat-matt.html">
-    <img class="user-preview-profile img-circle" src="images/matt.jpg"> 
-    <h3>Matt, 23</h3>
-    <h4>Event: The Weeknd, March 7, 2015</h4></a></div>
-  <div class="user-preview row">
-    <a href="/html/chat-jed.html">
-    <img class="user-preview-profile img-circle" src="images/jed.jpg"> 
-    <h3>Jed, 21</h3>
-    <h4>Event: Toby Keith and Eli Young Band, May 29, 2015 </h4></a></div>
+   <a href="/chat/{{id}}">
+                <div class="chat-selector"> 
+                   <div class="chat-selector-background"></div>
+                    <h3 class="chat-selector-title"> Maggie </h3>
+                    <div class="event-location">{{location}} </div>
+                    <img src="/images/people/1.png" class="event-bg-image"></img>
+                </div>  
+  </a>
 
 
 </div>
@@ -72,7 +82,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/profile.js"></script>
+<script src="/javascripts/matches.js"></script>
 </BODY>
 </HTML>
 

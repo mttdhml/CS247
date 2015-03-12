@@ -174,6 +174,26 @@ small {
 	font-size: 20pt;
 }
 
+.chat-selector-title {
+	position: absolute;
+	margin-top: 20px; 
+	padding-left: 20px;
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 20pt;
+}
+
+
+
+
+.event-location {
+	position: absolute;
+	margin-top: 10px; 
+	margin-left: 20px; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-style: 12pt; 
+	color: #ccc0ba;
+}
+
 .event-heading {
 	position: absolute;
 	width: 240px; 
@@ -188,6 +208,15 @@ small {
 	position: absolute;
 	margin-top: 246px; 
 	margin-left: 20px; 
+	font-family: "HelveticaNeue-Bold"; 
+	font-style: 12pt; 
+	color: #ccc0ba;
+}
+
+.accept-reject {
+	position: absolute;
+	margin-top: 20px; 
+	margin-left: 220px; 
 	font-family: "HelveticaNeue-Bold"; 
 	font-style: 12pt; 
 	color: #ccc0ba;
@@ -215,6 +244,39 @@ small {
 	margin-top: 220px;
 	margin-left: 12px; 
 	opacity: .75;
+}
+
+.chat-selector-background {
+	position: absolute;
+	width: 200px; 
+	height: 33px; 
+	background-color: #555557; 
+	margin-top: 20px;
+	margin-left: 12px; 
+	opacity: .75;
+}
+
+.invitation {
+	margin: 10px; 
+	height: 100px;
+	border-width: 1px; 
+	background-color: white;
+	border: 1px solid #bbbaba;  
+    background-repeat: no-repeat;
+    clip: rect(0px, 400px, 300px, 0px);
+    overflow: hidden;
+}
+
+.chat-selector {
+	margin: 10px; 
+	height: 200px;
+	border-width: 1px; 
+	background-color: white;
+	box-shadow: 3px 3px 4px #efefef; 
+	border: 1px solid #bbbaba;  
+    background-repeat: no-repeat;
+    clip: rect(0px, 400px, 300px, 0px);
+    overflow: hidden;
 }
 
 .event {
@@ -524,6 +586,14 @@ small {
 	color: #79f57f;
 }
 
+.green{
+	color: #79f57f;
+}
+
+.red{
+	color: #ff6b6d;;
+}
+
 #find-date {
 	margin-left: 10%;
 }
@@ -713,5 +783,4 @@ hr{
 	border: 2px solid;
 	border-radius: 0px;
 	color: #ff6b6d;
-	background-image: none;
 }

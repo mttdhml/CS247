@@ -8,9 +8,39 @@ router.get('/', function(req, res, next) {
 	var collection = db.get('events');
 	collection.find({},{},function(e,docs){
         res.render('index', {
-            "events" : docs
+            "events" : docs,
+            "me": parseInt(req.session.userid)
         });
     });
+});
+
+router.post('/accept', function(req, res) {
+	var id = req.body.id;
+	console.log("ID is " + id);
+	
+	//add to users dlikes
+	/*
+	function foundDesigner(err, data){
+
+		var newCount = data[0].likes + 1;
+		console.log(newCount);
+		var conditions = {"_id":itemID};
+		var update = {$inc:{"likes":1}};
+		var options = {multi: false};
+		designerItemModel.DesignerItem.update(conditions, update, options, goodDesigner);
+		function goodDesigner(err){
+			if(err) { console.log(err); res.send(500); }
+		}
+		console.log('userid' + req.session.userid);
+		userModel.User.update({'_id': req.session.userid},
+			{$push: {'mydlikes': data[0]}},
+			{upsert: true},
+			afterUpdate);
+		function afterUpdate(err){
+			if(err) {console.log(err); res.send(500);}
+		}
+	}*/
+	res.redirect('back');
 });
 
 router.get('/settings', function(req, res, next) {
@@ -72,7 +102,7 @@ router.get('/user/:userID', function(req, res) {
         	res.render('profile', {
             	"user" : user[0],
             	"events": events,
-            	"me": parseInt(req.session.userid)
+            	"me": req.session.userid
         	});
         });
     });
