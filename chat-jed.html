@@ -9,18 +9,20 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 </HEAD>
-<BODY BGCOLOR="FFFFFF">
+<BODY>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   		<div class="container" >
   			<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
+  			<div class="navbar-header nav-header">
   				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-  					<span class="sr-only">Toggle navigation</span>
+  					<!--<span class="sr-only">Toggle navigation</span>
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
+            -->
+            <img class="down-arrow" src="images/down-arrow.png"></img>
   				</button>
-  				<a class="navbar-brand" href="#">Company</a>
+  				<img class="nav-logo" src="images/logo.png"></img>
   			</div>
 
   			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,22 +30,53 @@
   			<div class="collapse navbar-collapse navbar-ex1-collapse">
   						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 <li>
-                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro color"></i>&nbsp; Notifications </a>
                 </li>
   							<li>
-  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
+  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro nav-element"></i>&nbsp; Profile</a>
   							</li>
   							<li>
-  								<a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
+  								<a href="settings.html" target="_blank"><i class="fa fa-gears nav-element"></i>&nbsp; Settings</a>
   							</li>
   							<li>
-  								<a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
+  								<a href="logout.html" target="_blank"><i class=""></i>&nbsp; Logout</a>
   							</li>
   						</ul>
   			</div><!-- /.navbar-collapse -->
   		</div>
   	</nav>
+    <!--
+    <div class="chat-header">
+      <div class="chat-profile-name"> Jed Tan </div>
+    </div>
+    -->
+    <div class="chat-container">
+      <div class="message-to-name"> ME </div> 
+      <div class="message-to">
+        <div class="line-to"></div>
+        Hey, nice to meet you! I see you wanted to go to watch Toby Keith!
+      </div>
 
+      <div class="message-from-name"> JED </div>
+      <div class="message-from">
+        <div class="line-from"></div>
+        Are you interested in going? I'm planning to buy tickets soon! Wanna do it through this app?
+      </div>
+
+      <div class="message-to-name"> ME </div> 
+      <div class="message-to">
+        <div class="line-to"></div>
+        Sure! Which special are you interested in?
+      </div>
+      <div class="message-from-name"> JED </div>
+      <div class="message-from">
+
+        <div class="line-from"></div>
+        Probably the special that is the cheapest.
+      </div>
+    </div>  
+
+<!--
 <div class="container">
 
 <div class="row">
@@ -66,17 +99,11 @@ Respond Here
 <div class="col-sm-4 text-center"> 
 <a href="find_date.html" role="button" class="btn btn-success btn-large">Send Message</a>
 </div>
-
 </div>
-
-
- 
-
-
-
 </div>
+-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="js/profile.js"></script>
 </BODY>

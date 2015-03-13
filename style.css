@@ -695,3 +695,136 @@ hr{
 	border-radius: 0px;
 	color: #ff6b6d;
 }
+
+.chat-profile-name {
+	position: absolute;
+	margin-top: 13px;
+	margin-left: 44px;
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 18pt;
+}
+
+.chat-profile-event {
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 204px;
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 17pt;
+}
+
+.chat-profile-age {
+	position: absolute;
+	margin-top: 33px;
+	margin-left: 45px;
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 10pt;	
+}
+
+.bold {
+	font-family: "HelveticaNeue-Bold";
+}
+
+.down-arrow {
+	width: 20px; 
+	height: 30px; 
+	margin-top: -10px;
+}
+
+.navbar-toggle {
+	border: 0px solid white;
+	background-color: transparent; 
+}
+
+a:active {
+  color:#f00;
+}
+
+.color {
+	color: #ff6b6d;
+}
+
+.nav-header {
+	background-color: white;
+	opacity: .8; 
+}
+
+.nav-logo {
+	display: block; 
+	margin-left: 11px; 
+	margin-top: -3px;
+	height: 50px;
+	width: 130px;
+}
+
+.line-to {
+	position: absolute;
+	border-left: 2px solid #525252; 
+	background-color: transparent; 
+	margin-left: -20px; 
+	margin-top: -8px; 
+	height: 28px; 
+	width: 10px; 
+}
+
+.message-to-name {
+	margin-left: 2%; 
+	color: #525252;
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.message-to {
+	margin-left: 4%;
+	width: 60%; 
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	margin-top: 4px;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.message-from-name {
+	margin-right: 2%;
+	float: right;
+	color: #ff6b6d;
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.line-from {
+	position: absolute;
+	border-right: 2px solid #ff6b6d; 
+	background-color: transparent; 
+	margin-left: 20px; 
+	margin-top: -8px; 
+	height: 28px; 
+	width: 217px; 
+}
+
+.message-from {
+	margin-left: 35%;
+	width: 60%; 
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	margin-top: 32px;
+	background-color: #fbfcfc;
+	border-radius: 4px;
+}
+
+.chat-header {
+	width: 102%;
+	margin-left:-1%;
+	height: 68px; 
+	border: 1px solid #efefef;
+	background-color: white;
+	opacity: .8;
+	box-shadow: 4px 4px 12px #efefef; 
+}
+
+
