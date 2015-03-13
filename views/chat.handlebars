@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Chat</title>
+<title>People Going to The Weeknd</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -9,78 +9,95 @@
 <link rel="stylesheet" href="/stylesheets/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
 </HEAD>
-<BODY BGCOLOR="FFFFFF">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  		<div class="container" >
-  			<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-  					<span class="sr-only">Toggle navigation</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  				<a class="navbar-brand" href="#">Company</a>
-  			</div>
+<BODY>
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header nav-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <!--<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            -->
+            <img class="down-arrow" src="/images/down-arrow.png"></img>
+          </button>
+          <a href="/"> <img class="nav-logo" src="/images/logo.png"></img></a>
+        </div>
 
-  			<!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
 
-  			<div class="collapse navbar-collapse navbar-ex1-collapse">
-  						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right"  id="dropdown" >
+                {{#if me}}
                 <li>
-                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                  <a href="/matches" target="_blank"><i class="fa fa-camera-retro color"></i>&nbsp; Notifications </a>
                 </li>
-  							<li>
-  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
-  							</li>
-  							<li>
-  								<a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
-  							</li>
-  							<li>
-  								<a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
-  							</li>
-  						</ul>
-  			</div><!-- /.navbar-collapse -->
-  		</div>
-  	</nav>
+                <li>
+                  <a href="/profile/{{me}}" target="_blank"><i class="fa fa-camera-retro nav-element"></i>&nbsp; Profile</a>
+                </li>
+                <li>
+                  <a href="/settings" target="_blank"><i class="fa fa-gears nav-element"></i>&nbsp; Settings</a>
+                </li>
+                <li>
+                  <a href="/logout" target="_blank"><i class=""></i>&nbsp; Logout</a>
+                </li>
+                {{else}}
+                <li>
+                  <a href="/frontPage" target="_blank"><i class=""></i>&nbsp; Login</a>
+                </li>
+                {{/if}}
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!--
+    <div class="chat-header">
+      <div class="chat-profile-name"> Jed Tan </div>
+    </div>
+    -->
+    <div class="chat-container">
+      {{#each messages}}
+      {{#if sent}}
+      <div class="message-from-name"> ME </div>
+      <div class="message-from">
+        <div class="line-from"></div>
+        {{message}}
+      </div>
+      {{else}}
+      <div class="message-to-name"> THEM </div> 
+      <div class="message-to">
+        <div class="line-to"></div>
+        {{message}}
+      </div>
+      {{/if}}
+      {{/each}}
 
-<div class="container">
+      <!--<div class="message-from-name"> JED </div>
+      <div class="message-from">
+        <div class="line-from"></div>
+        Are you interested in going? I'm planning to buy tickets soon! Wanna do it through this app?
+      </div>
 
-<div class="row">
- <img class="user-profile-pic img-circle" src="images/matt.jpg"> 
-    <h2>Matt, 23</h2>
-    <h4>Event: The Weeknd, March 7, 2015</h4>
-</div>
-<div id="chatbox">
-<div class="row" >
-<p class="sender"> Hey, nice to meet you! I see you wanted to go to watch Toby Keith! </p>
-</div>
-<div class="row">
-<p class="receiver"> Are you interested in going? I'm planning to buy tickets soon! Wanna do it through this app? </p>
-</div>
-<div class="row">
-<p class="sender"> Sure! Which special are you interested in? </p>
-</div>
-</div>
-<textarea id="message-box" rows="4" cols="50">
-Respond Here
-</textarea>
-<div class="col-sm-4 text-center"> 
-<button id="message-send">Send Message</a>
-</div>
+      <div class="message-to-name"> ME </div> 
+      <div class="message-to">
+        <div class="line-to"></div>
+        Sure! Which special are you interested in?
+      </div>
+      <div class="message-from-name"> JED </div>
+      <div class="message-from">
 
-</div>
+        <div class="line-from"></div>
+        Probably the special that is the cheapest.
+      </div>-->
 
-
- 
+    </div>  
 
 
 
-</div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/chat.js"></script>
+<script src="/javascripts/chat.js"></script>
 </BODY>
 </HTML>
 

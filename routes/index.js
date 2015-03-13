@@ -6,14 +6,45 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 	var db = req.db;
 	var collection = db.get('events');
+	console.log("user " + req.session.userid);
 	collection.find({},{},function(e,docs){
         res.render('index', {
             "events" : docs,
-            "me": parseInt(req.session.userid),
-            "exists": !isNaN(req.session.userid)
+            "me": parseInt(req.session.userid)
         });
     });
 });
+
+router.get('/chat/:userid', function(req, res, next) {
+	var db = req.db;
+	var collection = db.get('chats');
+	var otherID = parseInt(req.params.userid);
+	var selfID = parseInt(req.session.userid);
+	collection.find({$or:[{$and:[{"to":selfID},{"from":otherID}]}, {$and:[{"to":otherID},{"from":selfID}]}]},{},function(e,docs){
+        docs.sort(function(a,b) { return parseInt(a.order) - parseInt(b.order) } );
+        console.log(docs);
+        docs.forEach(function(element, index, array) {
+    		if(element.from == selfID){
+    			element.sent = true;
+    		}
+		});
+        
+        res.render('chat', {
+            "messages" : docs,
+            "me": parseInt(req.session.userid)
+        });
+    });
+});
+
+router.get('/logout', function(req, res, next) {
+	delete req.session.username;
+	delete req.session.user;
+	delete req.session.userid;
+
+    res.redirect('/');    
+});
+
+
 
 
 router.post('/accept', function(req, res) {
@@ -29,7 +60,7 @@ router.post('/accept', function(req, res) {
 	user_collection.update({"id":userid}, {$addToSet:{"talking":id}});
 	user_collection.update({"id":id}, {$addToSet:{"talking":userid}});
 
-    res.render('/matches');    
+    res.redirect('/matches');    
 
 });
 

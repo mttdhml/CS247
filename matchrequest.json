@@ -1,10 +1,10 @@
-[{"inviter" : 0, "invited": 2}, 
+[{"inviter" : 6, "invited": 2}, 
 {"inviter": 1, "invited": 3}, 
 {"inviter": 2, "invited": 4}, 
 {"inviter": 3, "invited": 5},
 {"inviter": 2, "invited": 3},
 {"inviter": 1, "invited": 4},
 {"inviter": 1, "invited": 5},
-{"inviter": 0, "invited": 3},
-{"inviter": 1, "invited": 0},
-{"inviter": 4, "invited": 0}]
+{"inviter": 6, "invited": 3},
+{"inviter": 1, "invited": 6},
+{"inviter": 4, "invited": 6}]
