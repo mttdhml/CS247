@@ -758,6 +758,13 @@ hr{
 	color: #ff6b6d;
 }
 
+.invite-button{
+	border: 2px solid;
+	border-radius: 0px;
+	color: #ff6b6d;
+	background-image: none;
+}
+
 .chat-profile-name {
 	position: absolute;
 	margin-top: 13px;

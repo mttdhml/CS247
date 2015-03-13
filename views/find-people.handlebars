@@ -11,7 +11,7 @@
 
 <html> 
     <body>
-       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container" >
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header nav-header">
@@ -32,20 +32,20 @@
               <ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 {{#if me}}
                 <li>
-                  <a href="/matches" target="_blank"><i class="fa fa-camera-retro color"></i>&nbsp; Notifications </a>
+                  <a href="/matches"><i class="fa fa-camera-retro color"></i>&nbsp; Notifications </a>
                 </li>
                 <li>
-                  <a href="/profile/{{me}}" target="_blank"><i class="fa fa-camera-retro nav-element"></i>&nbsp; Profile</a>
+                  <a href="/user/{{me}}"><i class="fa fa-camera-retro nav-element"></i>&nbsp; Profile</a>
                 </li>
                 <li>
-                  <a href="/settings" target="_blank"><i class="fa fa-gears nav-element"></i>&nbsp; Settings</a>
+                  <a href="/settings"><i class="fa fa-gears nav-element"></i>&nbsp; Settings</a>
                 </li>
                 <li>
-                  <a href="/logout" target="_blank"><i class=""></i>&nbsp; Logout</a>
+                  <a href="/logout"><i class=""></i>&nbsp; Logout</a>
                 </li>
                 {{else}}
                 <li>
-                  <a href="/frontPage" target="_blank"><i class=""></i>&nbsp; Login</a>
+                  <a href="/frontPage"><i class=""></i>&nbsp; Login</a>
                 </li>
                 {{/if}}
               </ul>

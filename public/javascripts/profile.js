@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	$("#invite").click(function(){
-		$("#invite").text('I\'m Going!');
+	$(".invite-button").click(function(){
+		$(this).text('Tapped!');
+		//$(this).style.color="";
 	});
-
-
 });
