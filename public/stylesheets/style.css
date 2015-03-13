@@ -36,11 +36,11 @@ h3 {
 }
 
 .header {
-	position: fixed;
+position: fixed;
 	background-color: white; 
 	opacity: .95; 
 	width: 102%; 
-	height: 94px;
+	height: 64px;
 	margin-left: -2px; 
 	padding-bottom: 10px;
 	background-color: #f2f1f1;
@@ -51,7 +51,7 @@ h3 {
 
 .search-input {
 	display: block;
-	margin: 0;
+	margin-top: -30px;
 	width: 100%;
 	font-family: "HelveticaNeue-Thin";
 	font-size: 14pt;
@@ -67,11 +67,11 @@ small {
 
 .search {
 	position: absolute;
-	width: 300px; 
+	width: 90%; 
 	height: 40px;
 	margin-top: -4px; 
-	margin-left: 20px;
-	background-color:black;
+	margin-left: 5%;
+	background-color:transparent;
 }
 
 .person-name {
@@ -810,7 +810,7 @@ hr{
 }
 
 .landing-page-logo {
-	margin-left: 25%;
+	margin-left: 23%;
 	width: 50%;  
 	margin-top: -90px;
 	position: absolute;
@@ -914,5 +914,66 @@ a:active {
 	opacity: .8;
 	box-shadow: 4px 4px 12px #efefef; 
 }
+
+.username-underline {
+	position: absolute;
+	margin-top: 310px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	border-bottom: 2px solid #c2c2c2; 
+}
+
+.password-underline {
+	position: absolute;
+	margin-top: 390px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	border-bottom: 2px solid #c2c2c2; 
+}
+
+.username-textfield {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	background-color: transparent;
+	border:1px solid transparent; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt; 
+	padding-top: 28px; 
+}
+
+.password-textfield {
+	position: absolute;
+	margin-top: 380px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	background-color: transparent;
+	border:1px solid transparent; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt; 
+	padding-top: 28px; 
+}
+
+.tagline {
+	position: absolute;
+	width: 40%; 
+	margin-left: 28%;
+	margin-top: 200px;
+	text-align: center; 
+	background-color: white; 
+	font-family: "HelveticaNeue-Thin"; 
+	padding-top: 3px; 
+	padding-bottom: 3px;
+	font-size: 12pt;
+	color: #ff6b6d;
+}
+
+
+
 
 
