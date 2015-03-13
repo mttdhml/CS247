@@ -91,7 +91,7 @@ router.get('/settings', function(req, res, next) {
 });
 
 router.get('/frontPage', function(req, res, next) {
-	res.render('frontPage');
+	res.render('frontpage');
 });
 
 router.get('/matches', function(req, res, next) {
