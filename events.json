@@ -1,7 +1,7 @@
-[{"id":0, "name":"The Weeknd", "location":"@Bill Graham Civic Auditorium", "date":"March 7", "time:":"@9:00pm", "image":"images/artist-pics/TheWeeknd.png"},
-{"id":1, "name":"Rihanna", "location":"@The Fillmore", "date":"March 14", "time:":"@6:00pm", "image":"images/artist-pics/Rihanna.png"},
-{"id":2, "name":"Paul McCartney", "location":"@SAP San Jose", "date":"March 20", "time:":"@7:30pm", "image":"images/artist-pics/PaulMcCartney.png"},
-{"id":3, "name":"Katy Perry", "location":"@AT&T Park", "date":"March 28", "time:":"@7:00pm", "image":"images/artist-pics/KatyPerry.png"},
-{"id":4, "name":"Kanye West", "location":"@Shoreline Amphitheatre", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/Kanye.png"},
-{"id":5, "name":"A$AP ROCKY", "location":"@The Fox", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/ASAP.png"},
-{"id":6, "name":"Taylor Swift", "location":"@The Warfield", "date":"April 12", "time:":"@9:30pm", "image":"images/artist-pics/TSwift.png"}]
+[{"id":0, "name":"The Weeknd", "location":"@Bill Graham Civic Auditorium", "date":"March 7", "time:":"@9:00pm", "image":"images/artist-pics/TheWeeknd.png", "avg":"54", "attending":470},
+{"id":1, "name":"Rihanna", "location":"@The Fillmore", "date":"March 14", "time:":"@6:00pm", "image":"images/artist-pics/Rihanna.png", "avg":"90", "attending":510},
+{"id":2, "name":"Paul McCartney", "location":"@SAP San Jose", "date":"March 20", "time:":"@7:30pm", "image":"images/artist-pics/PaulMcCartney.png", "avg":"186", "attending":633},
+{"id":3, "name":"Katy Perry", "location":"@AT&T Park", "date":"March 28", "time:":"@7:00pm", "image":"images/artist-pics/KatyPerry.png", "avg":"80", "attending":407},
+{"id":4, "name":"Kanye West", "location":"@Shoreline Amphitheatre", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/Kanye.png", "avg":"74", "attending":244},
+{"id":5, "name":"A$AP ROCKY", "location":"@The Fox", "date":"April 1", "time:":"@11:00pm", "image":"images/artist-pics/ASAP.png", "avg":"62", "attending": 190 },
+{"id":6, "name":"Taylor Swift", "location":"@The Warfield", "date":"April 12", "time:":"@9:30pm", "image":"images/artist-pics/TSwift.png", "avg":"139", "attending":207}]

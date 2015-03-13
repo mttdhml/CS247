@@ -9,42 +9,50 @@ router.get('/', function(req, res, next) {
 	collection.find({},{},function(e,docs){
         res.render('index', {
             "events" : docs,
-            "me": parseInt(req.session.userid)
+            "me": parseInt(req.session.userid),
+            "exists": !isNaN(req.session.userid)
         });
     });
 });
 
-router.post('/accept', function(req, res) {
-	var id = req.body.id;
-	console.log("ID is " + id);
-	
-	//add to users dlikes
-	/*
-	function foundDesigner(err, data){
 
-		var newCount = data[0].likes + 1;
-		console.log(newCount);
-		var conditions = {"_id":itemID};
-		var update = {$inc:{"likes":1}};
-		var options = {multi: false};
-		designerItemModel.DesignerItem.update(conditions, update, options, goodDesigner);
-		function goodDesigner(err){
-			if(err) { console.log(err); res.send(500); }
-		}
-		console.log('userid' + req.session.userid);
-		userModel.User.update({'_id': req.session.userid},
-			{$push: {'mydlikes': data[0]}},
-			{upsert: true},
-			afterUpdate);
-		function afterUpdate(err){
-			if(err) {console.log(err); res.send(500);}
-		}
-	}*/
-	res.redirect('back');
+router.post('/accept', function(req, res) {
+	var id = parseInt(req.body.id);
+	var userid = parseInt(req.session.userid);
+	console.log("ID is " + id);
+
+	var db = req.db;
+	var collection = db.get('matchrequest');
+	collection.remove({"invited":parseInt(userid), "inviter":parseInt(id)},{});
+
+	var user_collection = db.get('users');
+	user_collection.update({"id":userid}, {$addToSet:{"talking":id}});
+	user_collection.update({"id":id}, {$addToSet:{"talking":userid}});
+
+    res.render('/matches');    
+
+});
+
+router.post('/reject', function(req, res) {
+	var id = req.body.id;
+	var userid = req.session.userid;
+	console.log("ID is " + id);
+
+	var db = req.db;
+	var collection = db.get('matchrequest');
+
+	collection.remove({"invited":parseInt(userid), "inviter":parseInt(id)},{});
+    res.redirect('back');    
 });
 
 router.get('/settings', function(req, res, next) {
-	res.render('settings');
+	if(isNaN(req.session.userid)){
+    	res.redirect('/frontPage');
+    	return;
+    }
+	res.render('settings', {
+            "me": parseInt(req.session.userid)
+    });
 });
 
 router.get('/frontPage', function(req, res, next) {
@@ -52,7 +60,35 @@ router.get('/frontPage', function(req, res, next) {
 });
 
 router.get('/matches', function(req, res, next) {
-	res.render('matches');
+	if(isNaN(req.session.userid)){
+    	res.redirect('frontPage');
+    	return;
+    }
+    var db = req.db;
+	var collection = db.get('matchrequest');
+	var user_collection = db.get('users');
+    collection.find({"invited":parseInt(req.session.userid)},{},function(e,requests){
+    	var inviters= [];
+    	requests.forEach(function(element, index, array) {
+    		inviters.push(element.inviter);
+		});
+		user_collection.find({"id": { $in: inviters}},{},function(e,matches){
+	    		console.log(matches);
+	    		user_collection.find({"id": parseInt(req.session.userid)},{},function(e,myself){
+	    			var myuser = myself[0];
+	        		user_collection.find({"id": {$in: myuser.talking}},{},function(e,convos){
+	        			console.log(convos);
+	        			res.render('matches', {
+	            			"me": parseInt(req.session.userid),
+	            			"users": matches,
+	            			"convos": convos
+	    				});
+	    			});
+	    		});
+        	
+        });	
+    });
+    
 });
 
 router.get('/login', function(req, res, next) {
@@ -85,7 +121,8 @@ router.get('/find-people', function(req, res, next) {
 	collection.find({},{},function(e,docs){
         res.render('find-people', {
             "users" : docs,
-            "me": parseInt(req.session.userid)
+            "me": parseInt(req.session.userid),
+            "exists": !isNaN(req.session.userid)
         });
     });
 });
@@ -93,6 +130,10 @@ router.get('/find-people', function(req, res, next) {
 router.get('/user/:userID', function(req, res) {
     var db = req.db;
     var userID = req.params.userID;
+    if(isNaN(userID)){
+    	res.redirect('/frontPage');
+    	return;
+    }
     console.log("userID is " + userID);
     var collection = db.get('users');
     var event_collection = db.get('events');
@@ -102,7 +143,8 @@ router.get('/user/:userID', function(req, res) {
         	res.render('profile', {
             	"user" : user[0],
             	"events": events,
-            	"me": req.session.userid
+            	"me": req.session.userid,
+            	"exists": !isNaN(req.session.userid)
         	});
         });
     });
@@ -116,7 +158,8 @@ router.get('/event/:eventID', function(req, res) {
         res.render('event', {
             "event" : events[0],
             "id": eventID,
-            "me": parseInt(req.session.userid)
+            "me": parseInt(req.session.userid),
+            "exists": !isNaN(req.session.userid)
         });
     });
 });
@@ -127,7 +170,8 @@ router.get('/users', function(req, res) {
     collection.find({},{},function(e,docs){
         res.render('users', {
             "userlist" : docs,
-            "me": parseInt(req.session.userid)
+            "me": parseInt(req.session.userid),
+            "exists": !isNaN(req.session.userid)
         });
     });
 });
@@ -147,7 +191,8 @@ router.get('/find-date/:eventID', function(req, res) {
         		"first": first,
             	"users" : users,
             	"event": events[0],
-            	"me": parseInt(req.session.userid)
+            	"me": parseInt(req.session.userid),
+            	"exists": !isNaN(req.session.userid)
         	});
         });
     });

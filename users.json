@@ -1,9 +1,9 @@
-[{ "id": 0, "login": "matt", "age":23, "password": "matt", "location": "Stanford", "interests":"Chilling, Skateboarding", "favorite-artists":"", "name": "Matt", "imageURL":"images/matt.jpg", "attending":[0,1]},
-{ "id": 1, "login": "jed", "age":21, "password": "tan", "location": "SF Bay", "interests":"Vinyl, Basketball, Video Games", "favorite-artists":"Nas, Rakim, Zac Brown Band, Eric Church, Wale", "name": "Jed", "imageURL":"images/jed.jpg", "attending":[0,2]},
-{ "id": 2, "login": "maggie", "age": 22, "password":"sko", "location": "Palo Alto", "interests":"Photography", "favorite-artists":"Kid Cudi", "name":"Maggie", "imageURL":"images/people/1.png", "attending":[1,2,3]},
-{ "id": 3, "login": "andrew", "age": 22, "password":"los", "location": "Milpitas", "interests":"Sports", "favorite-artists":"Keith Urban", "name":"Andrew", "imageURL":"images/people/4.png", "attending":[2,5]},
-{ "id": 4, "login": "brandy", "age": 27, "password":"tor", "location": "Sunnyvale", "interests":"Knitting", "favorite-artists":"Beyonce", "name":"Brandy", "imageURL":"images/people/3.png", "attending":[2,4]},
-{ "id": 5, "login": "anne", "age": 27, "password":"wes", "location": "San Francisco", "interests":"Hip-Hop Dance", "favorite-artists":"Ciara", "name":"Anne", "imageURL":"images/people/2.png", "attending":[0,1,2,3,4,5]}]
+[{ "id": 0, "login": "matt", "age":23, "password": "matt", "location": "Stanford", "interests":"Chilling, Skateboarding", "favorite-artists":"", "name": "Matt", "imageURL":"images/matt.jpg", "attending":[0,1], "talking":[2,3]},
+{ "id": 1, "login": "jed", "age":21, "password": "tan", "location": "SF Bay", "interests":"Vinyl, Basketball, Video Games", "favorite-artists":"Nas, Rakim, Zac Brown Band, Eric Church, Wale", "name": "Jed", "imageURL":"images/jed.jpg", "attending":[0,2], "talking":[3,5]},
+{ "id": 2, "login": "maggie", "age": 22, "password":"sko", "location": "Palo Alto", "interests":"Photography", "favorite-artists":"Kid Cudi", "name":"Maggie", "imageURL":"images/people/1.png", "attending":[1,2,3], "talking":[0,4]},
+{ "id": 3, "login": "andrew", "age": 22, "password":"los", "location": "Milpitas", "interests":"Sports", "favorite-artists":"Keith Urban", "name":"Andrew", "imageURL":"images/people/4.png", "attending":[2,5], "talking":[0,1]},
+{ "id": 4, "login": "brandy", "age": 27, "password":"tor", "location": "Sunnyvale", "interests":"Knitting", "favorite-artists":"Beyonce", "name":"Brandy", "imageURL":"images/people/3.png", "attending":[2,4], "talking":[2]},
+{ "id": 5, "login": "anne", "age": 27, "password":"wes", "location": "San Francisco", "interests":"Hip-Hop Dance", "favorite-artists":"Ciara", "name":"Anne", "imageURL":"images/people/2.png", "attending":[0,1,2,3,4,5], "talking":[1]}]
 	
      
   

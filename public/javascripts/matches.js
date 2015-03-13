@@ -23,7 +23,7 @@ $(document).ready(function(){
 		var id = $(this).attr("id");
 		$.ajax({ 
            context:this,
-           url: '/accept',
+           url: '/reject',
            type: 'POST',
            cache: false, 
            data: { id: invite_id, accept: false}, 

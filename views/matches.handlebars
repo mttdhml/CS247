@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>People Going to The Weeknd</title>
+<title>My Matches</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -49,26 +49,30 @@
 <div class="row text-center">
  <h2>My Invitations</h2>
 </div>
-   <a href="/user/{{id}}" class="request" id="1">
-                <div class="invitation" id="1"> 
-                    <div class="event-date">Matt</div>
-                    <div class="accept-reject"><h2><a href="#" class="accept" id="1"><span class="glyphicon glyphicon-ok-sign green" aria-hidden="true"></a>&nbsp;</span><a href="#" class="decline" id="1"><span class="glyphicon glyphicon-remove-sign red" aria-hidden="true"></a></h2></span></div>
-                    <img src="/images/matt.jpg" class="event-bg-image"></img>
+ {{#each users}}
+   <a href="/user/{{id}}" class="request" id="{{id}}">
+                <div class="invitation" id="{{id}}"> 
+                    <div class="event-date">{{name}}</div>
+                    <div class="accept-reject"><h2><a href="#" class="accept" id="{{id}}"><span class="glyphicon glyphicon-ok-sign green" aria-hidden="true"></a>&nbsp;</span><a href="#" class="decline" id="1"><span class="glyphicon glyphicon-remove-sign red" aria-hidden="true"></a></h2></span></div>
+                    <img src="/{{imageURL}}" class="event-bg-image"></img>
                 </div>  
   </a>
-
+  {{/each}}
 
 <div class="row text-center">
- <h2>My Matches</h2>
+ <h2>My Conversations</h2>
 </div>
-   <a href="/chat/{{id}}">
+{{#each convos}}
+   <a href="/chat/{{me}}/{{id}}">
                 <div class="chat-selector"> 
                    <div class="chat-selector-background"></div>
-                    <h3 class="chat-selector-title"> Maggie </h3>
-                    <div class="event-location">{{location}} </div>
-                    <img src="/images/people/1.png" class="event-bg-image"></img>
+                    <h3 class="chat-selector-title"> {{name}}</h3>
+                    <div class="event-location"></div>
+                    <img src="/{{imageURL}}" class="event-bg-image"></img>
                 </div>  
   </a>
+{{/each}}
+
 
 
 </div>
