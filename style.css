@@ -804,6 +804,44 @@ hr{
 	font-size: 17pt;
 }
 
+.chat-text-area {
+	margin-top: 20px; 
+	background-color: white; 
+	width: 100%; 
+	height: 48px; 
+	border: 0px solid transparent; 
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 14pt;
+	padding-left: 10px;
+	padding-top: 10px; 
+}
+
+.send-button {
+	position: absolute;
+	margin-top: 20px;
+	border: 2px solid #2087fc;
+	margin-left: 78%; 
+	width: 15%; 
+	text-align: center; 
+	color: #2087fc;
+	font-family: "HelveticaNeue-Bold"; 
+	font-size: 12pt; 
+	box-shadow: 2px 2px 8px #dfdfdf; 
+}
+
+.username-textfield {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	background-color: transparent;
+	border:1px solid transparent; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt; 
+	padding-top: 28px; 
+}
+
 .chat-profile-age {
 	position: absolute;
 	margin-top: 33px;
