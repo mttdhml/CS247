@@ -645,17 +645,17 @@ hr{
 
 #faa {
 	margin-left: 20px; 
-	background-image: url("images/favorite-artists/Rakim.png"); 
+	background-image: url("/images/favorite-artists/Rakim.png"); 
 }
 
 #fab {
 	margin-left: 120px; 
-	background-image: url("images/favorite-artists/Wale.png"); 
+	background-image: url("/images/favorite-artists/Wale.png"); 
 }
 
 #fac {
 	margin-left: 220px; 
-	background-image: url("images/favorite-artists/JonPardi.png");
+	background-image: url("/images/favorite-artists/JonPardi.png");
 }
 
 .fav-desc {
@@ -665,6 +665,21 @@ hr{
 	margin-top: 90px; 
 	width: 80px;
 	text-align: center;
+}
+
+.login-button {
+	width: 30%; 
+	margin-left: 35%; 
+	border: 1px solid #ff6b6d;
+	position: absolute;
+	margin-top: 480px; 
+	text-align: center; 
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 16pt;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #ff6b6d;
+	box-shadow: 2px 2px 18px #dedede; 
 }
 
 #fda {

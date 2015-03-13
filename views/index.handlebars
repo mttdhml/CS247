@@ -12,37 +12,32 @@
 
 	<body>
 
-		<img class="landing-page-image" src="/images/audience.jpg"></img>
-		<img class="landing-page-logo" src="/images/opaque-logo.png"></img> 
+		<img class="landing-page-image" src="images/audience.jpg"></img>
+		<img class="landing-page-logo" src="images/opaque-logo.png"></img> 
 		
 		<div class="login-label">Login</div>
 		<div class="username-underline"> </div>
 		<div class="password-underline"> </div>
 		<div class="tagline"> Explore art culture in your area. </div>
 
-		<textarea placeholder="Username" class="username-textfield"></textarea>
-		<textarea placeholder="Password" class="password-textfield"></textarea>
+		
+
+		<textarea id="user-place" placeholder="Username" class="username-textfield"></textarea>
+		<textarea id="password-place" placeholder="Password" class="password-textfield"></textarea>
+<form action="/login" enctype="multipart/form-data" method="get">
+				
+				<input type="submit" class="upload-form form-control login-button" value="SUBMIT" id="login">
+				<input style="visibility:hidden" type="text" class="upload-form form-control username-textfield" id="user" name="user" placeholder="username"> <br>
+				<input style="visibility:hidden" type="password" class="upload-form form-control password-textfield" id="password" name="password" placeholder="password"> <br>
+		</form>
+
+		
+
+		<!--<div class="login-button">Log in</div>-->
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="/javascripts/bootstrap.min.js"></script>
-
-		<!--
-		<div class="container">
-			<div class = "form-group">
-				<h1>LOGIN:</h1>
-				<form action="/login" enctype="multipart/form-data" method="get">
-					<input type="text" class="upload-form form-control" id="user" name="user" placeholder="username"> <br>
-					<input type="password" class="upload-form form-control" id="password" name="password" placeholder="password"> <br>
-					<input type="submit" class="upload-form form-control" value="SUBMIT" id="login">
-				</form>
-				<a href="/loginGuest" class="btn btn-primary" id="try-button">TRY IT OUT </a>
-				<a href="/createAccount" class="btn btn-primary" id="register-button">REGISTER</a>
-			</div>	
-			<br>
-			
-			
-		</div>
-		--> 
+		<script src="/javascripts/landingpage.js"></script>
 
 
 	</body>
