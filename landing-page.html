@@ -7,34 +7,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+	<body>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-
-	
-
-
-	<div class="container">
-		<div class = "form-group">
-			<h1>LOGIN:</h1>
-			<form action="/login" enctype="multipart/form-data" method="get">
-				<input type="text" class="upload-form form-control" id="user" name="user" placeholder="username"> <br>
-				<input type="password" class="upload-form form-control" id="password" name="password" placeholder="password"> <br>
-				<input type="submit" class="upload-form form-control" value="SUBMIT" id="login">
-			</form>
-			<a href="/loginGuest" class="btn btn-primary" id="try-button">TRY IT OUT </a>
-			<a href="/createAccount" class="btn btn-primary" id="register-button">REGISTER</a>
-		</div>	
-		<br>
+		<img class="landing-page-image" src="images/audience.jpg"></img>
+		<img class="landing-page-logo" src="images/opaque-logo.png"></img> 
 		
-		
-	</div>
+		<div class="login-label">Login</div>
+		<div class="username-underline"> </div>
+		<div class="password-underline"> </div>
+		<div class="tagline"> Explore art culture in your area. </div>
+
+		<textarea placeholder="Username" class="username-textfield"></textarea>
+		<textarea placeholder="Password" class="password-textfield"></textarea>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+
+		<!--
+		<div class="container">
+			<div class = "form-group">
+				<h1>LOGIN:</h1>
+				<form action="/login" enctype="multipart/form-data" method="get">
+					<input type="text" class="upload-form form-control" id="user" name="user" placeholder="username"> <br>
+					<input type="password" class="upload-form form-control" id="password" name="password" placeholder="password"> <br>
+					<input type="submit" class="upload-form form-control" value="SUBMIT" id="login">
+				</form>
+				<a href="/loginGuest" class="btn btn-primary" id="try-button">TRY IT OUT </a>
+				<a href="/createAccount" class="btn btn-primary" id="register-button">REGISTER</a>
+			</div>	
+			<br>
+			
+			
+		</div>
+		--> 
 
 
-
-</body>
+	</body>
 </html>
  

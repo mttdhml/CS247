@@ -29,10 +29,28 @@ h3 {
 }
 
 .person-location {
-	font-family: "HelveticaNeue-Light";
-	font-size: 14pt;
-	color: #525252;
-	text-align: center;
+	font-family: "HelveticaNeue-Bold";
+	font-size: 12pt;
+	color: #525252;	
+}
+
+.profile-name {
+	margin-top: 10px; 
+	width: 100%; 
+	text-align: center; 
+	font-family: "HelveticaNeue-Thin"; 
+	font-size: 24pt;
+}
+
+.tap-button {
+	width: 24%; 
+	margin-left: 38%; 
+	margin-top: 17px;
+	padding: 5px; 
+	background-color: white; 
+	border: 2px solid #525252;
+	box-shadow: 2px 2px 12px #dedede; 
+	color: #ff6b6d; 
 }
 
 .header {
@@ -40,7 +58,7 @@ h3 {
 	background-color: white; 
 	opacity: .95; 
 	width: 102%; 
-	height: 94px;
+	height: 64px;
 	margin-left: -2px; 
 	padding-bottom: 10px;
 	background-color: #f2f1f1;
@@ -49,9 +67,11 @@ h3 {
 	padding-top: 50px;
 }
 
+
+
 .search-input {
 	display: block;
-	margin: 0;
+	margin-top: -30px;
 	width: 100%;
 	font-family: "HelveticaNeue-Thin";
 	font-size: 14pt;
@@ -67,11 +87,11 @@ small {
 
 .search {
 	position: absolute;
-	width: 300px; 
+	width: 90%; 
 	height: 40px;
 	margin-top: -4px; 
-	margin-left: 20px;
-	background-color:black;
+	margin-left: 5%;
+	background-color:transparent;
 }
 
 .person-name {
@@ -548,7 +568,8 @@ hr{
 	width: 80%;
 	margin-left: 10%; 
 	margin-top: 40px;
-	height: 400px; 
+	height: 300px; 
+	background-color: transparent; 
 }
 
 .artist-container {
@@ -682,18 +703,25 @@ hr{
 }
 
 .user-profile-pic{
-    width:70%;
-    margin-left:15%;
-    margin-top: 10%;
+    width:50%;
+    margin-left:25%;
+    margin-top: 0px;
+    box-shadow: 3px 3px 6px #dedede; 
 }
 
-.event-button{
+.event-button {
 	position: absolute;
-	margin-top: 350px;
-	width: 125px;
-	border: 2px solid;
-	border-radius: 0px;
+	width: 30%; 
+	margin-left: 40%; 
+	margin-top: 290px; 
+	background-color: #262626; 
+	border: 1px solid #ff6b6d;
 	color: #ff6b6d;
+	text-align: center; 
+	padding-left: 4px; 
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 26pt;
+	box-shadow: 3px 3px 12px #525252; 
 }
 
 .chat-profile-name {
@@ -720,8 +748,96 @@ hr{
 	font-size: 10pt;	
 }
 
+.home-logo {
+
+	margin-top: 40px;
+
+	position: absolute;
+
+}
+
+.wrapper {
+	position: absolute;
+	margin-left: 30px; 
+	margin-top: 20px; 
+	width: 100px; 
+	height: 100px; 
+}
+
+.home-image {
+	position: absolute;
+	margin-left: -20px; 
+	margin-top: -20px;  
+	width: 100px; 
+	height: 100px; 
+}
+
 .bold {
 	font-family: "HelveticaNeue-Bold";
+}
+
+.username-underline {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	border-bottom: 2px solid #c2c2c2; 
+}
+
+.password-underline {
+	position: absolute;
+	margin-top: 380px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	border-bottom: 2px solid #c2c2c2; 
+}
+
+.username-textfield {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	background-color: transparent;
+	border:1px solid transparent; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt; 
+	padding-top: 28px; 
+}
+
+.tagline {
+	position: absolute;
+	width: 40%; 
+	margin-left: 30%;
+	margin-top: 200px;
+	text-align: center; 
+	background-color: white; 
+	font-family: "HelveticaNeue-Thin"; 
+	padding-top: 3px; 
+	padding-bottom: 3px;
+	font-size: 12pt;
+	color: #ff6b6d;
+}
+
+
+.password-textfield {
+	position: absolute;
+	margin-top: 380px;
+	margin-left: 15%; 
+	width: 70%; 
+	height: 56px; 
+	background-color: transparent;
+	border:1px solid transparent; 
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt; 
+	padding-top: 28px; 
+}
+
+
+.password-textfield {
+
 }
 
 .down-arrow {
@@ -733,6 +849,20 @@ hr{
 .navbar-toggle {
 	border: 0px solid white;
 	background-color: transparent; 
+}
+
+.landing-page-logo {
+	margin-left: 25%;
+	width: 50%;  
+	margin-top: -90px;
+	position: absolute;
+}
+
+.landing-page-image {
+	position: absolute;
+	width: 130%; 
+	margin-left: -5%;
+	margin-top: -18%;
 }
 
 a:active {
