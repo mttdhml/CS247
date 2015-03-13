@@ -3,6 +3,7 @@
 <title>Settings</title>
 
 <!-- Latest compiled and minified CSS -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -12,42 +13,34 @@
 </HEAD>
 <BODY BGCOLOR="FFFFFF" style="padding-top:50px">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  		<div class="container" >
-  			<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-  					<span class="sr-only">Toggle navigation</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  				<a class="navbar-brand" href="#">Company</a>
-  			</div>
-
-  			<!-- Collect the nav links, forms, and other content for toggling -->
-
-  			<div class="collapse navbar-collapse navbar-ex1-collapse">
-  						<ul class="nav navbar-nav navbar-right"  id="dropdown" >
+      <div class="container" >
+        <div class="navbar-header nav-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <img class="down-arrow" src="images/down-arrow.png"></img>
+          </button>
+          <img class="nav-logo" src="images/logo.png"></img>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right"  id="dropdown" >
                 <li>
-                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Matches</a>
+                  <a href="matches.html" target="_blank"><i class="fa fa-camera-retro color"></i>&nbsp; Notifications </a>
                 </li>
-  							<li>
-  								<a href="profile.html" target="_blank"><i class="fa fa-camera-retro"></i>&nbsp; My Profile</a>
-  							</li>
-  							<li>
-  								<a href="settings.html" target="_blank"><i class="fa fa-gears"></i>&nbsp; Settings</a>
-  							</li>
-  							<li>
-  								<a href="logout.html" target="_blank"><i class="fa fa-power-off"></i>&nbsp; Logout</a>
-  							</li>
-  						</ul>
-  			</div><!-- /.navbar-collapse -->
-  		</div>
+                <li>
+                  <a href="profile.html" target="_blank"><i class="fa fa-camera-retro nav-element"></i>&nbsp; Profile</a>
+                </li>
+                <li>
+                  <a href="settings.html" target="_blank"><i class="fa fa-gears nav-element"></i>&nbsp; Settings</a>
+                </li>
+                <li>
+                  <a href="logout.html" target="_blank"><i class=""></i>&nbsp; Logout</a>
+                </li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
   	</nav>
 <div class="col-sm-4 text-center"> 
-<h3> Allow Public Access </h3></div>
+<h3 class="access"> Allow Public Access </h3></div>
 <div class="onoffswitch">
-
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
     <label class="onoffswitch-label" for="myonoffswitch">
         <span class="onoffswitch-inner"></span>

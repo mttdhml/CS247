@@ -28,6 +28,30 @@ h3 {
 	color: #fbfcfc;
 }
 
+.login-button {
+	width: 30%; 
+	margin-left: 35%; 
+	border: 1px solid #ff6b6d;
+	position: absolute;
+	margin-top: 480px; 
+	text-align: center; 
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 16pt;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #ff6b6d;
+	box-shadow: 2px 2px 18px #dedede; 
+}
+
+.access {
+	position: absolute;
+	font-family: "HelveticaNeue-Light"; 
+	font-size: 14pt;
+	margin-left: 20px; 
+	margin-top: 20px; 
+	color: #525252; 
+}
+
 .person-location {
 	font-family: "HelveticaNeue-Bold";
 	font-size: 12pt;
@@ -88,6 +112,15 @@ h3 {
 small {
 	font-family: "HelveticaNeue-Light"; 
 	font-size: 8pt; 
+}
+
+.position {
+	position: absolute;
+	margin-left: 70%;
+}
+
+.onoffswitch {
+	margin-top: 200px;
 }
 
 .search {
@@ -607,6 +640,17 @@ hr{
 	border-radius: 40px;
 }
 
+.favorite-artist-pic-paul {
+	width: 80px;
+	height: 80px; 
+	margin-top: 8px;
+	padding-top: -10px; 
+	position: absolute;
+	box-shadow: 1px 1px 8px #adadad;
+	background-size: 130% 100%;
+	border-radius: 40px;
+}
+
 #faa {
 	margin-left: 20px; 
 	background-image: url("images/favorite-artists/Rakim.png"); 
@@ -620,6 +664,21 @@ hr{
 #fac {
 	margin-left: 220px; 
 	background-image: url("images/favorite-artists/JonPardi.png");
+}
+
+#faax {
+	margin-left: 20px; 
+	background-image: url("images/favorite-artists/Kygo.png"); 
+}
+
+#fabx {
+	margin-left: 120px; 
+	background-image: url("images/favorite-artists/Avicii.png"); 
+}
+
+#facx {
+	margin-left: 220px; 
+	background-image: url("images/paul-simon.jpg");
 }
 
 .fav-desc {
@@ -787,7 +846,7 @@ hr{
 	margin-left: 15%; 
 	width: 70%; 
 	height: 56px; 
-	border-bottom: 2px solid #c2c2c2; 
+	border-bottom: 1px solid #525252; 
 }
 
 .password-underline {
@@ -796,7 +855,8 @@ hr{
 	margin-left: 15%; 
 	width: 70%; 
 	height: 56px; 
-	border-bottom: 2px solid #c2c2c2; 
+	border-bottom: 1px solid #525252; 
+
 }
 
 .username-textfield {
@@ -824,6 +884,7 @@ hr{
 	padding-bottom: 3px;
 	font-size: 12pt;
 	color: #ff6b6d;
+	opacity: .94;
 }
 
 
