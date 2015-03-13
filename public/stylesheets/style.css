@@ -749,15 +749,20 @@ hr{
     margin-top: 10%;
 }
 
-.event-button{
+.event-button {
 	position: absolute;
-	margin-top: 350px;
-	width: 125px;
-	border: 2px solid;
-	border-radius: 0px;
+	width: 30%; 
+	margin-left: 35%; 
+	margin-top: 290px; 
+	background-color: #262626; 
+	border: 1px solid #ff6b6d;
 	color: #ff6b6d;
+	text-align: center; 
+	padding-left: 4px; 
+	font-family: "HelveticaNeue-UltraLight"; 
+	font-size: 26pt;
+	box-shadow: 3px 3px 12px #525252; 
 }
-
 .invite-button{
 	border: 2px solid;
 	border-radius: 0px;
@@ -802,6 +807,20 @@ hr{
 .navbar-toggle {
 	border: 0px solid white;
 	background-color: transparent; 
+}
+
+.landing-page-logo {
+	margin-left: 25%;
+	width: 50%;  
+	margin-top: -90px;
+	position: absolute;
+}
+
+.landing-page-image {
+	position: absolute;
+	width: 130%; 
+	margin-left: -5%;
+	margin-top: -18%;
 }
 
 a:active {

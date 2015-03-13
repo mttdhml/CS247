@@ -22,7 +22,7 @@
             -->
             <img class="down-arrow" src="/images/down-arrow.png"></img>
           </button>
-          <a href="/"> <img class="nav-logo" src="/images/logo.png"></img></a>
+          <a href="/find-event"> <img class="nav-logo" src="/images/logo.png"></img></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,14 +55,15 @@
   <img class="event-photo" src="/{{event.image}}"></img>
   <div class="event-heading"></div>
   <h3 class="event-title" id="title">{{event.name}}</h1>
-  <div class="event-location" id="location">{{event.location}}<br/>Average Price: {{event.avg}}</div> 
-  <!--<a href="#" role="button" id="go-button" class="event-button btn btn-large">I Want to Go!</a>--></div>
-  <a href="/find-date/{{event.id}}" id="find-date" class="event-button btn btn-large">I Want To Go!</a>
+  <div class="event-location" id="location">{{event.location}}</div> 
+  
+  <div class="event-button"> RSVP </div>
+
 
   <div class="people-going"> 423 
     <br> 
       <span class="people-going-description">people are going </span>
-    </br> 
+    </br>
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

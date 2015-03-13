@@ -4,11 +4,15 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
+    res.render('index');
+});
+
+router.get('/find-event', function(req, res, next) {
 	var db = req.db;
 	var collection = db.get('events');
 	console.log("user " + req.session.userid);
 	collection.find({},{},function(e,docs){
-        res.render('index', {
+        res.render('find-event', {
             "events" : docs,
             "me": parseInt(req.session.userid)
         });
@@ -41,7 +45,7 @@ router.get('/logout', function(req, res, next) {
 	delete req.session.user;
 	delete req.session.userid;
 
-    res.redirect('/');    
+    res.redirect('/find-event');    
 });
 
 
@@ -133,7 +137,7 @@ router.get('/login', function(req, res, next) {
 		var selectedUser = users[0];
 		if(selectedUser == null){
 			console.log("null");
-			res.redirect('/');
+			res.redirect('/find-event');
 		}
 		else{
 			req.session.username = selectedUser.login;
@@ -141,7 +145,7 @@ router.get('/login', function(req, res, next) {
 			req.session.userid = selectedUser.id;
 			console.log(selectedUser);
 			console.log(req.session.userid);
-			res.redirect('/');
+			res.redirect('/find-event');
 		}
     });
 });
